@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/OurValues.css";
 
 import valuesImg from "../../assets/home/Mission & Vision.webp";
-import logoImg from "../../assets/home/LGSTECH Logo White Background.jpg";
+import logoImg from "../../assets/home/LGSTECH Logo White Background_cropped.webp";
 
 function OurValues() {
   return (
