@@ -557,7 +557,7 @@ const easeInOutCubic = (x) =>
 
 const Preloader = ({
   onFinish,
-  duration = 1200,
+  duration = 2000,
   numSlices = 50,
   logoSrc,
   logoScale = 0.33,
@@ -718,7 +718,7 @@ const Preloader = ({
       <canvas
         ref={canvasRef}
         className="preloader-canvas" data-aos="fade-left"
-     data-aos-duration="7000"
+     data-aos-duration="5000"
         width={window.innerWidth}
         height={window.innerHeight}
       />

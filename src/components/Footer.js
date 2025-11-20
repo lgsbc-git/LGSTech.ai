@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
-import logo from "../assets/primaryLGS_logo/LGSTECH Website Version.png";
+import logo from "../assets/primaryLGS_logo/LGS_Tech_White_Logo_cropped-removebg-preview.png";
 
 function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // ✅ New loading state
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubscribe = async () => {
     if (!email) {
@@ -14,11 +14,12 @@ function Footer() {
       return;
     }
 
-    setIsLoading(true); // ✅ Start loading
+    setIsLoading(true);
     setMessage("");
 
     try {
       const backendURL = process.env.REACT_APP_BACKEND_URL;
+
       const res = await fetch(`${backendURL}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -29,64 +30,63 @@ function Footer() {
       setMessage(data.success || data.error);
       setEmail("");
 
-      // ✅ Auto-hide message after 5 seconds
-      setTimeout(() => {
-        setMessage("");
-      }, 5000);
+      setTimeout(() => setMessage(""), 5000);
     } catch (error) {
       setMessage("Failed to subscribe. Try again later.");
       setTimeout(() => setMessage(""), 5000);
     } finally {
-      setIsLoading(false); // ✅ Stop loading
+      setIsLoading(false);
     }
   };
 
   return (
-    <footer className="footer">
-      <div className="footer-left">
-        <img src={logo} alt="LGS Tech Logo" className="footer-logo full-logo-footer" />
-        <p>
-          Copyright © 2025 LGS Tech.
-          <br />
-          All rights reserved
-        </p>
-        <div className="socials">
-          <a href="https://www.linkedin.com/company/lgstech" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
+    <footer className="footer-new">
 
-      <div className="footer-columns">
-        <div className="column">
-          <h4>Company</h4>
-          <ul>
-            <li><Link to="/about">About us</Link></li>
-            <li><Link to="/contact">Contact us</Link></li>
-            <li><Link to="/blogs">Blogs</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/stories">Stories</Link></li>
-          </ul>
+      {/* TOP FOOTER CONTENT */}
+      <div className="footer-content">
+
+        {/* LEFT SECTION */}
+        <div className="footer-brand">
+          <img src={logo} alt="LGS Tech Logo" className="footer-logo-img" />
+
+          <p className="footer-brand-text">
+            At LSGTech, We Believe Technology Should Simplify Complexity <br />
+            And Drive Growth Not Slow It Down.
+          </p>
         </div>
 
-        <div className="column">
+        {/* QUICK LINKS */}
+        <div className="footer-links">
+          <h4>Quick Links</h4>
+          <a><Link to="/about">About Us</Link></a>
+          <a><Link to="/contact">Contact Us</Link></a>
+          <a><Link to="/services">Our Services</Link></a>
+          <a><Link to="/blogs">Blog</Link></a>
+          <a><Link to="/stories">Stories</Link></a>
+        </div>
+
+        {/* SUPPORT */}
+        <div className="footer-links">
           <h4>Support</h4>
-          <ul>
-            <li><Link to="/help">Help center</Link></li>
-            <li><Link to="/privacy">Privacy policy</Link></li>
-          </ul>
+          <a><Link to="/help">Help Centre</Link></a>
+          <a><Link to="/terms">Term & Condition</Link></a>
+          <a><Link to="/privacy">Privacy Policy</Link></a>
         </div>
 
-        <div className="column subscribe">
-          <h4>Stay up to date</h4>
-          <div className="subscribe-wrapper">
+        {/* NEWSLETTER */}
+        <div className="footer-newsletter">
+          <h4>Subscribe To Our Newsletter</h4>
+
+          <div className="newsletter-box">
             <input
               type="email"
-              placeholder="Your email address"
+              placeholder="Enter Your Email"
+              className="newsletter-input"
               value={email}
+              disabled={isLoading}
               onChange={(e) => setEmail(e.target.value)}
-              disabled={isLoading} // ✅ disable input while loading
             />
+
             <button onClick={handleSubscribe} disabled={isLoading}>
               {isLoading ? <div className="loader"></div> : <>&#10148;</>}
             </button>
@@ -94,18 +94,24 @@ function Footer() {
 
           {message && (
             <p
-              className={`subscribe-message ${message.toLowerCase().includes("thank") ||
-                  message.toLowerCase().includes("already")
+              className={`newsletter-msg ${
+                message.toLowerCase().includes("thank") ||
+                message.toLowerCase().includes("already")
                   ? "success"
                   : "error"
-                }`}
+              }`}
             >
               {message}
             </p>
           )}
-
         </div>
       </div>
+
+      {/* COPYRIGHT BAR */}
+      <div className="footer-bottom-bar">
+        Copyright © 2025 LGS Tech | All Rights Reserved
+      </div>
+
     </footer>
   );
 }

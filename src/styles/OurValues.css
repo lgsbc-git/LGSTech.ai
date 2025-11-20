@@ -1,0 +1,148 @@
+/* ===============================
+   SECTION BASE
+=============================== */
+.values-section {
+  width: 100%;
+  background: #f5f7f9;
+  padding-bottom: 90px;
+}
+
+/* ===============================
+   TOP BLUE BAR
+=============================== */
+.values-stats-bar {
+       background: linear-gradient(to right, #041632, #0046a2);
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 90px;
+    color: white;
+    align-items: center;
+}
+
+.value-stat h2 {
+  font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 10px;
+}
+
+.value-stat p {
+      font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 350px;
+}
+
+.divider {
+     width: 2px;
+    height: 200px;
+    background: rgb(255 255 255 / 71%);
+}
+
+/* ===============================
+   MAIN CONTENT (2-column)
+=============================== */
+.values-content {
+  display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 100px;
+    padding: 70px 100px;
+    align-items: start;
+    padding-top: 120px;
+}
+
+/* Left Image */
+.values-main-img {
+  width: 100%;
+  border-radius: 20px;
+  height: 460px;
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.values-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #04356d;
+  margin-bottom: 28px;
+  line-height: 1.12;
+}
+
+/* ===============================
+   NEW GRID (logo left, cards right)
+=============================== */
+.ourvalues-grid {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "logo mission"
+    "logo vision";
+  gap: 40px 110px;
+}
+
+/* Logo Box (left side) */
+.values-logo-box {
+  grid-area: logo;
+  width: 190px;
+  height: 190px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      box-shadow: 0 8px 26px rgb(114 116 119 / 69%);
+}
+
+.values-logo-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Mission + Vision cards */
+.ourvalues-grid-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.ourvalues-grid-card h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  color: #04356d;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.ourvalues-grid-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #444;
+  max-width: 420px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media(max-width: 1100px) {
+  .values-content {
+    grid-template-columns: 1fr;
+  }
+
+  .ourvalues-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "mission"
+      "vision";
+  }
+
+  .values-logo-box {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,159 @@
+/* ===============================
+   MAIN SECTION
+================================ */
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 100px;
+  background: linear-gradient(to right, #001533, #043a7f);
+  gap: 20px;
+  padding-left: 250px;
+}
+
+/* ===============================
+   CARD STACK CONTAINER
+================================ */
+.services-cards-wrapper {
+  position: relative;
+  width: 430px;
+  height: 560px;
+}
+
+/* ===============================
+   CARD BASE STYLE
+================================ */
+.service-card {
+  position: absolute;
+  width: 350px;
+  height: 560px;
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  transition: all 0.8s ease;
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* IMG */
+.service-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 28px;
+}
+
+.service-content h3 {
+  font-family: "Inter";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #002b5c;
+  margin-bottom: 8px;
+}
+
+.service-content p {
+  font-family: "Montserrat";
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.service-btn {
+  background: #04c2b4;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 25px;
+  color: #fff;
+  font-family: "Inter";
+  cursor: pointer;
+}
+
+.service-btn:hover {
+  background: #039b90;
+}
+
+/* ===============================
+   ACTIVE CARD POSITIONING
+================================ */
+.service-card.active {
+  z-index: 10;
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* NEXT CARD (RIGHT SIDE) */
+.service-card.right {
+  transform: translateX(130px) scale(0.92);
+  opacity: 0.35;
+  filter: blur(2px);
+  z-index: 6;
+}
+
+/* PREVIOUS CARD (LEFT SIDE) */
+.service-card.left {
+  transform: translateX(-130px) scale(0.92);
+  opacity: 0.35;
+  filter: blur(2px);
+  z-index: 6;
+}
+
+/* All other inactive cards hidden behind */
+.service-card.inactive {
+  opacity: 0;
+  transform: scale(0.85);
+  filter: blur(4px);
+}
+
+/* ===============================
+   RIGHT SIDE TEXT
+================================ */
+.services-text {
+  max-width: 450px;
+  text-align: right;
+  color: white;
+}
+
+.services-subtitle {
+  font-family: "Montserrat";
+  color: #9bff9b;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-family: "Inter";
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.services-title span {
+  color: #26d74f;
+}
+
+.services-desc {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.services-text .services-btn {
+  float: right;
+  padding: 14px 30px;
+  border-radius: 26px;
+  font-size: 1rem;
+  background: #04c2b4;
+  color: white;
+  border: 0px;
+}
+.services-text .services-btn:hover{
+  background-color: #0b5c62;
+  cursor: pointer;
+}

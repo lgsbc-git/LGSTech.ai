@@ -1,0 +1,164 @@
+/* ==============================
+   ABOUT SECTION
+============================== */
+
+.aboutlgs-section {
+  width: 100%;
+  padding: 80px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  background: #f3f7f6;
+}
+
+/* -----------------------------
+   LEFT SIDE
+------------------------------- */
+
+.about-left {
+  flex: 1;
+}
+
+/* Subheading (Inter) */
+.aboutlgs-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* Main Heading (Inter) */
+.aboutlgs-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #04356d;
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+/* Description (Montserrat) */
+.aboutlgs-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  color: #222;
+  max-width: 440px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button */
+.about-btn {
+  font-family: "Inter", sans-serif;
+  background: #04c2b4;
+  color: #fff;
+  border: none;
+  padding: 14px 34px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #049a8a;
+}
+
+/* Bottom image left */
+.about-main-img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+/* -----------------------------
+   RIGHT SIDE
+------------------------------- */
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-team-img {
+  width: 70%;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+/* Stats Card */
+.about-stats-card {
+  width: 65%;
+  background: #ffffff;
+  padding: 5px 0;
+  border-radius: 18px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Stat Numbers (Inter) */
+.stat-item h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+/* Stat Labels (Montserrat) */
+.stat-item p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+/* Divider line inside card */
+.divider {
+  width: 2px;
+  height: 40px;
+  background: #ddd;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1100px) {
+  .about-section {
+    padding: 60px 40px;
+    flex-direction: column;
+  }
+
+  .about-stats-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2.1rem;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+  }
+
+  .about-stats-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .divider {
+    display: none;
+  }
+}
