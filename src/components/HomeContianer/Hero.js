@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/Hero.css";
-import heroBg from "../../assets/home/hero-section-background.jpg";
+import heroBg from "../../assets/home/hero-section-background.webp";
 
 function Hero() {
   const navigate = useNavigate();
