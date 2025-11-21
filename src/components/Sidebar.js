@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/Sidebar.css";
 
 import logoLight from "../assets/primary/LGS Tech Logo Gradient_croppedv2.jpg";
-import logoDark from "../assets/primary/lgstech-whitelogo.png";
+import logoDark from "../assets/primary/lgstech-whitelogo.svg";
 
 import ScrollToTop from "./ScrollToTop";
 
