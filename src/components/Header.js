@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "../styles/Header.css";
 
 // Logos
-import homeLogo from "../assets/LGS Tech White Logo.png";
+import homeLogo from "../assets/primary/lgstech-whitelogo.png";
 
 
 import lightLogo from "../assets/LGS Tech Logo Gradient.png";

@@ -7,10 +7,13 @@ import OurValues from "../components/HomeContianer/OurValues";
 import Testimonials from "../components/HomeContianer/Testimonials";
 import OurPartner from "../components/HomeContianer/OurPartner";
 import ConsultationForm from "../components/HomeContianer/ConsultationForm";
+import Sidebar from "../components/Sidebar";
+// import { Sidebar } from "lucide-react";
 
 export default function Home() {
   return (
     <>
+      <Sidebar/>
       <Hero />
       <AboutLGS/>
       <HomepageServices/>
