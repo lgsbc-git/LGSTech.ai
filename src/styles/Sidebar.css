@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 75px;
+  width: 90px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 0.8rem;
-  background-color: rgb(14, 160, 160);
+  /* background-color: rgb(14, 160, 160); */
 }
 
 /* Theme Styles */
@@ -247,5 +247,5 @@
 /* For light sections → black links */
 .sidebar-text-light .sidebar-link,
 .sidebar-text-light .scroll-top {
-  color: #ffffff !important;
+  color: #6c6868 !important;
 }
