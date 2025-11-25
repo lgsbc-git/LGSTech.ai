@@ -122,6 +122,8 @@ export const serviceData = {
   "erp-product-evaluation": {
   title: "ERP Product Evaluation Services",
   sidebarActive: "ERP Product Evaluation",
+
+  // import this in serviceData.js:  import erpProductHero from "../assets/services/erp-product.jpg";
   heroImage: erpProductHero,
 
   blocks: [
@@ -130,68 +132,70 @@ export const serviceData = {
     // -------------------------------------------------
     {
       type: "hero",
-      heading: "Ensure Your Next ERP Investment Drives Growth, Efficiency & Long-Term Value",
+      heading: "Ensure Your Next ERP Investment Drives Growth, Efficiency, and Confidence",
       subheading:
-        "Our ERP Product Evaluation service helps organizations confidently select the right ERP platform through structured analysis, scoring matrices, and executive-ready recommendations. We assess functional fit, scalability, usability, cost, integrations, risks, and vendor reliability—ensuring your ERP investment delivers measurable business value.",
-      button: "Speak to an ERP Advisor",
+        "Selecting the right ERP is a strategic decision with long-term impact. Our ERP Product Evaluation Services help executives make data-driven, risk-managed decisions by assessing ERP solutions for functionality, scalability, usability, cost, integrations, and vendor reliability—ensuring your ERP aligns with business objectives.",
+      button: "Request a Consultation",
       link: "/contact"
     },
 
     // -------------------------------------------------
-    // SECTION 1: Why ERP Product Evaluation Matters
+    // SECTION: Why C-Suite Leaders Prioritize ERP Evaluation
     // -------------------------------------------------
     {
       type: "section-title",
-      title: "Why ERP Product Evaluation Matters"
+      title: "Why C-Suite Leaders Prioritize ERP Evaluation"
     },
     {
       type: "paragraph",
       text:
-        "Choosing the wrong ERP solution can lead to implementation failures, high ownership costs, inefficiency, and lost productivity. Our structured evaluation framework empowers leadership teams to minimize risk, accelerate decision-making, and ensure the chosen ERP aligns with organizational goals, processes, and future scalability."
-    },
-
-    // -------------------------------------------------
-    // SECTION 2: What Our ERP Product Evaluation Covers
-    // -------------------------------------------------
-    {
-      type: "section-title",
-      title: "What Our ERP Product Evaluation Covers"
+        "ERP selection mistakes can cost millions, disrupt operations, and stall growth. The right ERP—evaluated objectively—becomes a powerful driver of efficiency, scalability, and competitive advantage."
     },
     {
       type: "bullets",
       items: [
-        "Functional Fit-Gap Assessment – Evaluate how well each ERP meets current and future business needs.",
-        "Non-Functional Requirements Assessment – Performance, security, scalability, compliance, reliability.",
-        "Business Process Mapping – Align ERP features with real-world operational workflows.",
-        "Integration Requirements Assessment – Ensure seamless connection with existing applications.",
-        "Total Cost of Ownership (TCO) Analysis – Licensing, implementation, customization, and support costs.",
-        "Technology Alignment – Verify platform modernization, cloud readiness, and vendor roadmap direction.",
-        "Implementation Readiness – Assess resource fit, timelines, and deployment complexity."
+        "Minimizes selection risk and ensures alignment with strategic goals",
+        "Accelerates decision-making by up to 60%",
+        "Provides objective comparisons and transparent insights",
+        "Strengthens executive confidence in the final ERP choice"
       ]
     },
 
     // -------------------------------------------------
-    // SECTION 3: Executive Deliverables
+    // SECTION: Your ERP Evaluation Journey – Simplified
     // -------------------------------------------------
     {
       type: "section-title",
-      title: "Executive Deliverables Included"
+      title: "Your ERP Evaluation Journey"
+    },
+    {
+      type: "paragraph",
+      text:
+        "We begin by analysing your application and technology landscape to understand how systems work today. We then document functional requirements and non-functional expectations, evaluate products against your needs, and manage the full evaluation lifecycle—turning a complex process into a clear, structured path toward making the right ERP decision."
+    },
+
+    // -------------------------------------------------
+    // SECTION: Executive Deliverables
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Executive-Ready ERP Evaluation Deliverables"
     },
     {
       type: "bullets",
       items: [
-        "ERP Requirements Documentation",
-        "Process Mapping Summary",
-        "Vendor/Product Shortlist",
-        "Fit-Gap Analysis Report",
-        "Detailed Evaluation Scorecard",
-        "ROI & TCO Comparison",
-        "Final Recommendation Report"
+        "Application & technology landscape assessment",
+        "End-to-end business requirements documentation",
+        "Non-functional requirement (NFR) documentation",
+        "ERP product scoring matrix",
+        "Vendor comparison report with strengths, risks, and cost insights",
+        "Structured evaluation process documentation",
+        "Final recommendation report with shortlisted options"
       ]
     },
 
     // -------------------------------------------------
-    // SECTION 4: Our Evaluation Approach
+    // SECTION: Step-by-Step Evaluation Approach
     // -------------------------------------------------
     {
       type: "section-title",
@@ -200,37 +204,37 @@ export const serviceData = {
     {
       type: "steps",
       steps: [
-        "Discovery & Requirements Gathering – Understand business needs, challenges, and strategic goals.",
-        "Business Process Mapping – Map and analyze key workflows across functional teams.",
-        "Initial ERP Shortlisting – Identify ERP systems that align with industry, size, and complexity.",
-        "Functional & Technical Evaluation – Deep dive into modules, features, integrations, and architecture.",
-        "Solution Demonstrations – Structured demos and scoring based on real business scenarios.",
-        "Cost, TCO & ROI Analysis – Comprehensive evaluation of long-term financial impact.",
-        "Final Recommendation – Executive-ready report summarizing findings and strategic fit."
+        "Discovery & Requirements Gathering – Understand processes, gaps, and strategic goals",
+        "Process & System Mapping – Analyse current workflows and systems",
+        "Vendor Research & Shortlisting – Identify global and industry-specific ERP options",
+        "ERP Product Scoring – Evaluate functionality, architecture, usability, scalability, and cost",
+        "Fit-Gap Analysis – Identify where each ERP meets or falls short",
+        "Solution Demonstrations – Structured demos based on real business use cases",
+        "Final Recommendation & Roadmap – Provide decision-ready guidance and next steps"
       ]
     },
 
     // -------------------------------------------------
-    // SECTION 5: Benefits
+    // SECTION: Why Partner With Us
     // -------------------------------------------------
     {
       type: "section-title",
-      title: "Key Benefits of Our ERP Evaluation Approach"
+      title: "Why Partner With Us"
     },
     {
       type: "bullets",
       items: [
-        "Ensures ERP alignment with real operational needs",
-        "Reduces risk of ERP implementation failure",
-        "Provides clear scoring, comparison, and justification",
-        "Accelerates decision-making for leadership",
-        "Improves long-term ROI visibility",
-        "Ensures scalability and future-readiness"
+        "Vendor-neutral, unbiased assessment",
+        "Proven framework for ERP selection",
+        "Deep functional & technical expertise",
+        "Experience across SMEs, mid-market, and enterprises",
+        "Fast, structured, transparent evaluation",
+        "100% tailored to your business — no vendor influence"
       ]
     },
 
     // -------------------------------------------------
-    // SECTION 6: Who We Help
+    // SECTION: Who We Help
     // -------------------------------------------------
     {
       type: "section-title",
@@ -239,18 +243,18 @@ export const serviceData = {
     {
       type: "paragraph",
       text:
-        "Our ERP Product Evaluation services are designed for organizations upgrading from legacy systems, implementing ERP for the first time, or expanding into more scalable platforms. We support SMEs, enterprises, and multi-location businesses across industries including manufacturing, distribution, retail, services, and more."
+        "We support organizations upgrading from legacy systems, implementing ERP for the first time, or scaling into more advanced platforms. Our expertise spans SMEs, enterprises, and multi-location businesses across manufacturing, distribution, retail, services, and more."
     },
 
     // -------------------------------------------------
-    // SECTION 7: Highlight Box
+    // HIGHLIGHT CALL-OUT
     // -------------------------------------------------
     {
       type: "highlight",
       bg: "#00255d",
       textColor: "#ffffff",
       text:
-        "The right ERP product becomes the backbone of your digital transformation. A wrong choice can hold your business back for years. Our structured, unbiased evaluation helps you make a decision with confidence."
+        "The right ERP becomes the backbone of your business. The wrong one can hold you back for years. Our structured, unbiased evaluation ensures you make a confident, future-ready decision."
     },
 
     // -------------------------------------------------
@@ -258,12 +262,12 @@ export const serviceData = {
     // -------------------------------------------------
     {
       type: "cta",
-      text: "Ready to Begin Your ERP Evaluation?",
-      button: "Talk to an ERP Specialist",
+      text: "Start Your ERP Evaluation Today",
+      button: "Connect with Our Experts",
       link: "/contact"
     }
   ]
-}
+},
 
   // Your other services stay untouched
 };
