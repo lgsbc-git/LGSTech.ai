@@ -4,17 +4,17 @@ import "../styles/Services.css";
 import { useNavigate } from "react-router-dom";
 
 // FUTURE SCOPE: Replace these when real icons are available
-import icon1 from "../assets/1.svg";
-import icon2 from "../assets/1.svg";
-import icon3 from "../assets/1.svg";
-import icon4 from "../assets/1.svg";
-import icon5 from "../assets/1.svg";
-import icon6 from "../assets/1.svg";
-import icon7 from "../assets/1.svg";
-import icon8 from "../assets/1.svg";
-import icon9 from "../assets/1.svg";
-import icon10 from "../assets/1.svg";
-import icon11 from "../assets/1.svg";
+import icon1 from "../assets/services/highlightpage/ERP Vendor Evaluation.png";
+import icon2 from "../assets/services/highlightpage/ERP Product Evaluation.png";
+import icon3 from "../assets/services/highlightpage/Readiness Assessment.png";
+import icon4 from "../assets/services/highlightpage/Consulting Services.png";
+import icon5 from "../assets/services/highlightpage/Development Services.png";
+import icon6 from "../assets/services/highlightpage/Implementation Services.png";
+import icon7 from "../assets/services/highlightpage/Program & Project Management.png";
+import icon8 from "../assets/services/highlightpage/Platform Development & Training.png";
+import icon9 from "../assets/services/highlightpage/Data Migration.png";
+import icon10 from "../assets/services/highlightpage/Finance & Accounting Services.png";
+import icon11 from "../assets/services/highlightpage/Digital Marketing.png";
 
 
 const servicesList = [
