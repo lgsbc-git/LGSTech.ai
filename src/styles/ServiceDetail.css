@@ -1,39 +1,39 @@
-/* src/styles/ServiceDetail.css */
-
-/* ===============================
-   PAGE WRAPPER
-================================ */
+/* -----------------------------------------------------
+   GLOBAL WRAPPER
+----------------------------------------------------- */
 .service-detail-container {
   width: 100%;
-  background: #f4f7fb;
+  background: #f5f7fb;
   padding-bottom: 80px;
   font-family: "Inter", sans-serif;
 }
 
-/* ===============================
-   PAGE TITLE (TOP CENTER)
-================================ */
+/* -----------------------------------------------------
+   PAGE TITLE
+----------------------------------------------------- */
 .service-detail-title {
   text-align: center;
   font-size: 3rem;
-  font-weight: 700;
-  padding: 130px 0 40px;
+  font-weight: 800;
+  padding: 160px 0 50px;
   color: #002b5c;
+  letter-spacing: -0.5px;
+  margin-top: 0px;
 }
 
-/* ===============================
-   CONTENT LAYOUT (SIDEBAR + MAIN)
-================================ */
+/* -----------------------------------------------------
+   LAYOUT (SIDEBAR + MAIN)
+----------------------------------------------------- */
 .service-detail-content-wrapper {
   display: flex;
+  gap: 50px;
   justify-content: center;
-  gap: 40px;
   padding: 0 100px;
 }
 
-/* ===============================
-   MAIN CONTENT AREA
-================================ */
+/* -----------------------------------------------------
+   MAIN CONTENT PANEL
+----------------------------------------------------- */
 .service-detail-main {
   width: 900px;
 }
@@ -41,103 +41,220 @@
 /* HERO IMAGE */
 .service-hero-img {
   width: 100%;
-  border-radius: 14px;
-  margin-bottom: 25px;
-  object-fit: cover;
   height: 340px;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
 }
 
-/* MAIN HEADING UNDER IMAGE */
-.service-heading {
-  font-size: 2rem;
+/* -----------------------------------------------------
+   BLOCK: HERO BANNER (Heading + Subheading)
+----------------------------------------------------- */
+.block-hero-banner {
+  padding: 30px;
+  border-radius: 18px;
+  color: white;
+  margin-bottom: 40px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Text styling stays the same */
+.block-hero-banner h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.block-hero-banner p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 760px;
+  opacity: 0.95;
+}
+
+.block-hero-banner .cta-button {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 14px 30px;
+  background: #04c2b4;
+  color: white;
+  border-radius: 32px;
   font-weight: 600;
-  color: #002b5c;
-  margin-bottom: 15px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* ===============================
-   CONTENT SECTIONS
-================================ */
-.service-section {
-  margin-bottom: 35px;
+.block-hero-banner .cta-button:hover {
+  background: #039b90;
 }
 
-.service-section h3 {
-  font-size: 1.3rem;
+
+/* -----------------------------------------------------
+   BLOCK: SECTION TITLES
+----------------------------------------------------- */
+.block-section-title {
+  font-size: 1.9rem;
   font-weight: 700;
   color: #002b5c;
-  margin-bottom: 12px;
+  margin: 40px 0 15px;
+  position: relative;
 }
 
-.service-section p {
-  font-size: 1rem;
+.block-section-title::after {
+  content: "";
+  width: 55px;
+  height: 4px;
+  background: #00c2b4;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* -----------------------------------------------------
+   BLOCK: PARAGRAPH
+----------------------------------------------------- */
+.block-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  font-family: "Montserrat";
+  margin-bottom: 20px;
 }
 
-.service-section ul {
+/* -----------------------------------------------------
+   BLOCK: BULLET LIST
+----------------------------------------------------- */
+.block-bullets {
   padding-left: 20px;
+  margin-bottom: 30px;
 }
 
-.service-section li {
-  font-size: 1rem;
+.block-bullets li {
+  margin-bottom: 10px;
+  font-size: 1.03rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.55;
   color: #333;
-  margin-bottom: 8px;
-  line-height: 1.5;
-  font-family: "Montserrat";
+  position: relative;
 }
 
-/* ===============================
-   RESPONSIVE FIXES
-================================ */
-@media (max-width: 1100px) {
-  .service-detail-content-wrapper {
-    flex-direction: column;
-    padding: 0 40px;
-  }
-
-  .service-sidebar {
-    width: 100%;
-    position: relative;
-    top: 0;
-  }
-
-  .service-detail-main {
-    width: 100%;
-  }
-
-  .service-hero-img {
-    height: 260px;
-  }
+.block-bullets li::before {
+  content: "•";
+  color: #00c2b4;
+  font-size: 1.4rem;
+  position: absolute;
+  left: -18px;
+  top: -3px;
 }
 
-@media (max-width: 600px) {
-  .service-detail-title {
-    font-size: 2rem;
-  }
+/* -----------------------------------------------------
+   BLOCK: STEPS (Ordered list)
+----------------------------------------------------- */
+.block-steps {
+  counter-reset: step-counter;
+  margin: 25px 0 40px 0;
+  padding-left: 0;
 }
-/* ===============================
-   MODERN + GLASS SIDEBAR (Option 1 + 5)
-================================ */
+
+.block-steps li {
+  list-style: none;
+  counter-increment: step-counter;
+  padding-left: 55px;
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 22px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.block-steps li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  background: #00c2b4;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* -----------------------------------------------------
+   BLOCK: HIGHLIGHT (blue box)
+----------------------------------------------------- */
+.block-highlight {
+  padding: 30px;
+  border-radius: 14px;
+  margin: 40px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.65;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------------------------------------------
+   BLOCK: CTA (Bottom Call to Action)
+----------------------------------------------------- */
+.block-cta {
+  margin: 60px 0 20px;
+  padding: 35px;
+  background: linear-gradient(135deg, #041632, #0046a2);
+  border-radius: 18px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+}
+
+.block-cta h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.block-cta .cta-button {
+  padding: 12px 26px;
+  background: #04c2b4;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.block-cta .cta-button:hover {
+  background: #039b90;
+}
+
+/* -----------------------------------------------------
+   SIDEBAR (Your exact previous design preserved)
+----------------------------------------------------- */
 .service-sidebar {
   width: 280px;
   padding: 25px;
   border-radius: 18px;
-
-  /* Glassmorphism */
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-
-  /* Gradient border */
   border: 1.5px solid rgba(255, 255, 255, 0.4);
   background-clip: padding-box;
-
-  /* Soft shadow */
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
-
   position: sticky;
   top: 120px;
 }
@@ -151,38 +268,55 @@
   letter-spacing: 0.8px;
 }
 
-/* LIST ITEMS */
 .service-sidebar p {
   padding: 12px 16px;
   margin-bottom: 10px;
-
   border-radius: 10px;
   font-size: 0.97rem;
   font-weight: 500;
-
   cursor: pointer;
   transition: 0.3s ease;
-
   color: #0b2347;
+  background-color: #a8a8b336;
   backdrop-filter: blur(2px);
-      background-color: #a8a8b336;
 }
 
-/* HOVER EFFECT (modern + subtle) */
 .service-sidebar p:hover {
   background: #46474993;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transform: translateX(4px);
   color: white;
+  transform: translateX(4px);
 }
 
-/* ACTIVE SERVICE */
 .active-service {
   background: linear-gradient(135deg, #00255d, #00255d);
   color: #fff !important;
-
   font-weight: 600;
-  box-shadow: 0 8px 20px rgba(105, 107, 108, 0.501);
-
+  box-shadow: 0 8px 20px rgba(105, 107, 108, 0.5);
   transform: translateX(4px);
+}
+
+/* -----------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+@media (max-width: 1100px) {
+  .service-detail-content-wrapper {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+  .service-sidebar {
+    width: 100%;
+    position: relative;
+  }
+  .service-detail-main {
+    width: 100%;
+  }
+  .service-hero-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-detail-title {
+    font-size: 2rem;
+  }
 }

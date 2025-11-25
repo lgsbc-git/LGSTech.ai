@@ -31,6 +31,8 @@ import "./styles/App.css";
 // import Blogs from "./pages/Blogs";
 import ScrollToTop from "./components/ScrollToTop";
 import ServicePageDynamic from "./pages/ServicePageDynamic";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import ProductsPage from "./pages/ProductsPage";
 // import HelpCenter from "./pages/HelpCenter";
 // import Terms from "./pages/Terms";
 // import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -71,6 +73,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServicePageDynamic />} />
+          <Route path="/products" element={<ProductsPage />} />
+
+          <Route path="/:slug-product" element={<ProductDetailPage/>} />
+
           {/* 
           <Preloader logoSrc={logo} pieceSize={80} />
           <Route path="/product" element={<Product />} />

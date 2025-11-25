@@ -121,12 +121,16 @@ const Services = () => {
             <h3 className="services-page-card-title">{service.title}</h3>
             <p className="services-page-card-desc">{service.desc}</p>
 
-            <button 
+            <button
               className="services-page-btn"
-              onClick={() => navigate(service.link)}
+              onClick={() => {
+                navigate(service.link);
+                window.scrollTo(0, 0);
+              }}
             >
               Read More
             </button>
+
 
           </div>
         ))}

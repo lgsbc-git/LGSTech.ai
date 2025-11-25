@@ -11,32 +11,32 @@
    TOP BLUE BAR
 =============================== */
 .values-stats-bar {
-       background: linear-gradient(to right, #041632, #0046a2);
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 90px;
-    color: white;
-    align-items: center;
+  background: linear-gradient(to right, #041632, #0046a2);
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 90px;
+  color: white;
+  align-items: center;
 }
 
 .value-stat h2 {
   font-family: "Inter", sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-    margin: 10px;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 10px 0;
 }
 
 .value-stat p {
-      font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    max-width: 350px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-width: 350px;
 }
 
 .divider {
-     width: 2px;
-    height: 200px;
-    background: rgb(255 255 255 / 71%);
+  width: 2px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 /* ===============================
@@ -44,11 +44,10 @@
 =============================== */
 .values-content {
   display: grid;
-    grid-template-columns: 480px 1fr;
-    gap: 100px;
-    padding: 70px 100px;
-    align-items: start;
-    padding-top: 120px;
+  grid-template-columns: 480px 1fr;
+  gap: 100px;
+  padding: 120px 100px 70px;
+  align-items: start;
 }
 
 /* Left Image */
@@ -67,42 +66,18 @@
   font-weight: 800;
   color: #04356d;
   margin-bottom: 28px;
-  line-height: 1.12;
+  line-height: 1.15;
 }
 
 /* ===============================
-   NEW GRID (logo left, cards right)
+   UPDATED GRID (cards only)
 =============================== */
 .ourvalues-grid {
   display: grid;
-  grid-template-columns: 110px 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "logo mission"
-    "logo vision";
-  gap: 40px 110px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 40px;
 }
 
-/* Logo Box (left side) */
-.values-logo-box {
-  grid-area: logo;
-  width: 190px;
-  height: 190px;
-  background: #ffffff;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-      box-shadow: 0 8px 26px rgb(114 116 119 / 69%);
-}
-
-.values-logo-box img {
-  width: 180px;
-  height: 180px;
-  object-fit: contain;
-}
-
-/* Mission + Vision cards */
 .ourvalues-grid-card {
   background: #ffffff;
   border-radius: 14px;
@@ -132,17 +107,34 @@
 @media(max-width: 1100px) {
   .values-content {
     grid-template-columns: 1fr;
+    padding: 80px 40px;
   }
 
   .ourvalues-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "logo"
-      "mission"
-      "vision";
   }
 
-  .values-logo-box {
-    margin-bottom: 10px;
+  .values-main-img {
+    height: 360px;
+  }
+}
+
+@media(max-width: 650px) {
+  .values-heading {
+    font-size: 2rem;
+  }
+
+  .values-stats-bar {
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 40px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .values-main-img {
+    height: 280px;
   }
 }

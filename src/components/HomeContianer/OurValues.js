@@ -2,7 +2,6 @@ import React from "react";
 import "../../styles/OurValues.css";
 
 import valuesImg from "../../assets/home/Mission & Vision.webp";
-import logoImg from "../../assets/home/LGSTECH Logo White Background_cropped.webp";
 
 function OurValues() {
   return (
@@ -12,21 +11,30 @@ function OurValues() {
       <div className="values-stats-bar">
         <div className="value-stat">
           <h2>150+</h2>
-          <p>Microsoft-Certified Technical Consultants Are Just A Call Away To Help You Out, Irresepective Of The Errors Of The Business Solution.</p>
+          <p>
+            Microsoft-Certified Technical Consultants Are Just A Call Away To Help You Out,
+            Irresepective Of The Errors Of The Business Solution.
+          </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
           <h2>99%</h2>
-          <p>Customer Satisfaction Is The Sole Reason We Have Been Working For 500+ Clients Round The Clock.</p>
+          <p>
+            Customer Satisfaction Is The Sole Reason We Have Been Working For 500+ Clients
+            Round The Clock.
+          </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
           <h2>14+</h2>
-          <p>Years Of Experience Have Taught Us to Resolve Challenging Business Issues, In No Time With 100% Success Rate.</p>
+          <p>
+            Years Of Experience Have Taught Us to Resolve Challenging Business Issues,
+            In No Time With 100% Success Rate.
+          </p>
         </div>
       </div>
 
@@ -38,7 +46,7 @@ function OurValues() {
           <img src={valuesImg} alt="Our Values" className="values-main-img" />
         </div>
 
-        {/* RIGHT HEADING + GRID */}
+        {/* RIGHT CONTENT */}
         <div className="values-right">
 
           <h2 className="values-heading">
@@ -47,13 +55,8 @@ function OurValues() {
             Delivering Tailored.
           </h2>
 
-          {/* ⭐ NEW GRID — LOGO LEFT, CARDS RIGHT */}
+          {/* ⭐ UPDATED GRID — ONLY CARDS NOW */}
           <div className="ourvalues-grid">
-
-            {/* Logo (spans 2 rows) */}
-            <div className="values-logo-box">
-              <img src={logoImg} alt="LGS Tech" />
-            </div>
 
             {/* Mission */}
             <div className="ourvalues-grid-card">
@@ -85,4 +88,3 @@ function OurValues() {
 }
 
 export default OurValues;
-

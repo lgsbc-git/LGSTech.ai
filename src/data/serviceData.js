@@ -1,259 +1,269 @@
-// src/data/serviceData.js
+import erpVendorHero from "../assets/services/erp-vendor.jpg";
+import erpProductHero from "../assets/services/erp-product.webp";
+
 export const serviceData = {
   "erp-vendor-evaluation": {
-    title: "ERP Vendor Evaluation",
-    heroImage: "/mnt/data/Single Service.pdf", // placeholder — replace with image path if you extract hero image
-    heading: "Make The Right ERP Choice With Confidence",
+    title: "ERP Vendor Evaluation Services",
     sidebarActive: "ERP Vendor Evaluation",
-    sections: [
+
+    heroImage: erpVendorHero ,
+
+    blocks: [
       {
-        subheading: "Why ERP Vendor Evaluation Matters?",
-        text:
-          "Choosing the right ERP system is one of the most crucial decisions for any growing business. With countless platforms, features, and pricing models in the market, finding the perfect match can feel overwhelming. Our ERP Vendor Evaluation Service helps you cut through the confusion and select the best ERP solution aligned with your business goals, workflow, and budget."
+        type: "hero",
+        heading:
+          "Choose the Right ERP Vendor with Confidence, Clarity & Strategic Insight",
+        subheading:
+          "Selecting an ERP vendor shouldn’t feel like a gamble. Our structured, data-driven evaluation framework ensures you invest in the right system with full confidence. We provide unbiased vendor analysis, executive-level comparison reports, and actionable recommendations designed to support strategic decision-making.",
+        button: "Request a Consultation",
+        link: "/contact"
+      },
+
+      {
+        type: "section-title",
+        title: "Why Vendor Evaluation Matters for Leadership"
       },
       {
-        subheading: "Our ERP Vendor Evaluation Services Include",
-        text: [
-          "Business Needs Analysis",
-          "Vendor Shortlisting & Comparison",
-          "Detailed Feature & Gap Analysis",
-          "Cost & ROI Evaluation",
-          "Demo Coordination & Technical Assessment",
-          "Integration & Compatibility Check",
-          "Final Recommendation Report"
+        type: "paragraph",
+        text:
+          "Choosing the wrong ERP vendor can result in delays, cost overruns, and adoption challenges—jeopardizing business outcomes. Our framework eliminates uncertainty, giving executives a clear path to selecting a vendor aligned with long-term growth, scalability, and operational efficiency."
+      },
+
+      {
+        type: "section-title",
+        title: "Our ERP Vendor Evaluation Services"
+      },
+      {
+        type: "bullets",
+        items: [
+          "Business Needs Analysis – Identify operational priorities, process gaps, and functional requirements.",
+          "Vendor Shortlisting & Comparison – Based on industry relevance, scalability, budget, and goals.",
+          "Detailed Feature & Gap Analysis – Feature-by-feature comparison of vendor strengths and weaknesses.",
+          "Cost & ROI Evaluation – Analyze licensing, implementation, integration, and long-term ownership.",
+          "Demo Coordination & Technical Assessment – Manage demos and perform due diligence.",
+          "Integration & Compatibility Check – Validate technical fit with architecture and scalability needs.",
+          "Final Recommendation Report – Comprehensive vendor ranking and executive-ready justification."
         ]
+      },
+
+      {
+        type: "section-title",
+        title: "Executive Deliverables You Will Receive"
+      },
+      {
+        type: "bullets",
+        items: [
+          "Business Requirements Documentation",
+          "Request for Proposal (RFP) Development",
+          "ERP Business Case Development",
+          "RFP Response Evaluation & Scoring",
+          "RFP Process Management"
+        ]
+      },
+
+      {
+        type: "section-title",
+        title: "How Our Evaluation Process Works"
+      },
+      {
+        type: "steps",
+        steps: [
+          "Discovery & Requirements Analysis",
+          "Vendor Shortlisting & RFP Development",
+          "Vendor Responses, Demos & Scoring",
+          "Technical & Commercial Evaluation",
+          "Final Recommendation"
+        ]
+      },
+
+      {
+        type: "section-title",
+        title: "Key Benefits of Our Approach"
+      },
+      {
+        type: "bullets",
+        items: [
+          "Unbiased vendor selection ensuring strategic alignment",
+          "Faster, structured decision-making for executives",
+          "Reduced risk of ERP failure and costly delays",
+          "Clear visibility into cost, ROI, and business impact",
+          "Improved internal alignment and executive clarity",
+          "Expert guidance through the full evaluation lifecycle"
+        ]
+      },
+
+      {
+        type: "section-title",
+        title: "Who We Help"
+      },
+      {
+        type: "paragraph",
+        text:
+          "Our ERP vendor evaluation services are designed for C-level and executive teams in SMEs, large enterprises, companies replacing legacy systems, or implementing ERP for the first time across manufacturing, distribution, retail, services, healthcare, and more."
+      },
+
+      {
+        type: "highlight",
+        bg: "#00255d",
+        textColor: "#ffffff",
+        text:
+          "Navigating the ERP marketplace doesn’t have to be risky. Let our experts guide your evaluation and ensure your ERP investment aligns with your strategic goals."
+      },
+
+      {
+        type: "cta",
+        text: "Ready to Select the Right ERP Vendor?",
+        button: "Get a Free Consultation",
+        link: "/contact"
       }
     ]
   },
 
   "erp-product-evaluation": {
-    title: "ERP Product Evaluation",
-    heroImage: "/mnt/data/Services.pdf",
-    heading: "Identify the Best ERP Fit For Your Business",
-    sidebarActive: "ERP Product Evaluation",
-    sections: [
-      {
-        subheading: "Why ERP Product Evaluation Matters?",
-        text:
-          "Our ERP Product Evaluation service systematically analyzes ERP solutions to identify the best fit for your business. We assess features, scalability, usability, cost and vendor reliability for informed decision-making."
-      },
-      {
-        subheading: "Our ERP Product Evaluation Services Include",
-        text: [
-          "Organisation application landscape study",
-          "Organisation technology landscape study",
-          "Business requirements documentation",
-          "Non-functional requirements documentation",
-          "ERP Product evaluation and scoring",
-          "ERP Product evaluation process management"
-        ]
-      }
-    ]
-  },
+  title: "ERP Product Evaluation Services",
+  sidebarActive: "ERP Product Evaluation",
+  heroImage: erpProductHero,
 
-  "dynamics365-readiness-assessment": {
-    title: "Microsoft Dynamics 365 Readiness Assessment",
-    heroImage: "/mnt/data/Single Service.pdf",
-    heading: "Prepare Your Organization for D365 Transformation",
-    sidebarActive: "Microsoft Dynamics 365 Readiness Assessment",
-    sections: [
-      {
-        subheading: "Why Readiness Assessment Matters?",
-        text:
-          "We evaluate your organization’s readiness for Dynamics 365 adoption by assessing technology landscape, people, change management and support services. The result is a tailored readiness dashboard and consulting report."
-      },
-      {
-        subheading: "Readiness Assessment Includes",
-        text: [
-          "Application & technology landscape study",
-          "People demography study",
-          "Change readiness & support services study",
-          "Readiness assessment report & dashboarding"
-        ]
-      }
-    ]
-  },
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Ensure Your Next ERP Investment Drives Growth, Efficiency & Long-Term Value",
+      subheading:
+        "Our ERP Product Evaluation service helps organizations confidently select the right ERP platform through structured analysis, scoring matrices, and executive-ready recommendations. We assess functional fit, scalability, usability, cost, integrations, risks, and vendor reliability—ensuring your ERP investment delivers measurable business value.",
+      button: "Speak to an ERP Advisor",
+      link: "/contact"
+    },
 
-  "dynamics365-consulting": {
-    title: "Microsoft Dynamics 365 Consulting Services",
-    heroImage: "/mnt/data/Services.pdf",
-    heading: "End-to-End Consulting for All D365 Modules",
-    sidebarActive: "Microsoft Dynamics 365 Consulting Services",
-    sections: [
-      {
-        subheading: "Why D365 Consulting Matters?",
-        text:
-          "Our Dynamics 365 experts provide consulting across Finance, SCM, Sales, Customer Service, Commerce and more. We ensure scalability, security and tailored solutions to maximize ROI from your ERP investments."
-      },
-      {
-        subheading: "Our Consulting Areas",
-        text: [
-          "Finance, SCM, Commerce, Sales",
-          "Project Management & Accounting",
-          "Customer Service & Field Service",
-          "Integration & Security",
-          "Environment Strategy & Solution Architecture"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 1: Why ERP Product Evaluation Matters
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why ERP Product Evaluation Matters"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Choosing the wrong ERP solution can lead to implementation failures, high ownership costs, inefficiency, and lost productivity. Our structured evaluation framework empowers leadership teams to minimize risk, accelerate decision-making, and ensure the chosen ERP aligns with organizational goals, processes, and future scalability."
+    },
 
-  "dynamics365-development": {
-    title: "Microsoft Dynamics 365 Development Services",
-    heroImage: "/mnt/data/Single Service.pdf",
-    heading: "Tailored D365 Development for Your Business Needs",
-    sidebarActive: "Microsoft Dynamics 365 Development Services",
-    sections: [
-      {
-        subheading: "Why Custom Development Matters?",
-        text:
-          "We provide custom development and extensions for Dynamics 365, ensuring solutions are tailored to unique business needs. Using Azure DevOps best practices, we streamline build automation and ensure reliable delivery."
-      },
-      {
-        subheading: "Our Development Services Include",
-        text: [
-          "Product extension requirements",
-          "Product extension design",
-          "Custom development",
-          "Azure DevOps build automation"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 2: What Our ERP Product Evaluation Covers
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "What Our ERP Product Evaluation Covers"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Functional Fit-Gap Assessment – Evaluate how well each ERP meets current and future business needs.",
+        "Non-Functional Requirements Assessment – Performance, security, scalability, compliance, reliability.",
+        "Business Process Mapping – Align ERP features with real-world operational workflows.",
+        "Integration Requirements Assessment – Ensure seamless connection with existing applications.",
+        "Total Cost of Ownership (TCO) Analysis – Licensing, implementation, customization, and support costs.",
+        "Technology Alignment – Verify platform modernization, cloud readiness, and vendor roadmap direction.",
+        "Implementation Readiness – Assess resource fit, timelines, and deployment complexity."
+      ]
+    },
 
-  "dynamics365-implementation": {
-    title: "Microsoft Dynamics 365 Implementation Services",
-    heroImage: "/mnt/data/Services.pdf",
-    heading: "Smooth, End-to-End D365 Implementation",
-    sidebarActive: "Microsoft Dynamics 365 Implementation Services",
-    sections: [
-      {
-        subheading: "Why Implementation Matters?",
-        text:
-          "From project initiation to deployment, we handle end-to-end D365 implementations. Our services cover configuration, integration, ISV management, testing, training and change management to ensure smooth rollouts."
-      },
-      {
-        subheading: "Our Implementation Services Include",
-        text: [
-          "End-to-end implementation management",
-          "Project initiation & PMO establishment",
-          "Product configuration & deployment",
-          "Power Platform & ISV integration",
-          "Testing, training & change management"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 3: Executive Deliverables
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Executive Deliverables Included"
+    },
+    {
+      type: "bullets",
+      items: [
+        "ERP Requirements Documentation",
+        "Process Mapping Summary",
+        "Vendor/Product Shortlist",
+        "Fit-Gap Analysis Report",
+        "Detailed Evaluation Scorecard",
+        "ROI & TCO Comparison",
+        "Final Recommendation Report"
+      ]
+    },
 
-  "d365-project-management": {
-    title: "Microsoft Dynamics 365 Program & Project Management",
-    heroImage: "/mnt/data/Single Service.pdf",
-    heading: "Agile, DevOps-Based Project Execution",
-    sidebarActive: "Microsoft Dynamics 365 Program & Project Management",
-    sections: [
-      {
-        subheading: "Why PMO Matters?",
-        text:
-          "We offer dedicated program and project management services for Dynamics 365 initiatives. Using Agile DevOps templates, we ensure projects are executed on time, within budget and aligned with strategic goals."
-      },
-      {
-        subheading: "Our PMO Services Include",
-        text: [
-          "Program management services",
-          "Project management services",
-          "Agile template-based DevOps management",
-          "Deployment management services"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 4: Our Evaluation Approach
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Our Step-by-Step ERP Evaluation Approach"
+    },
+    {
+      type: "steps",
+      steps: [
+        "Discovery & Requirements Gathering – Understand business needs, challenges, and strategic goals.",
+        "Business Process Mapping – Map and analyze key workflows across functional teams.",
+        "Initial ERP Shortlisting – Identify ERP systems that align with industry, size, and complexity.",
+        "Functional & Technical Evaluation – Deep dive into modules, features, integrations, and architecture.",
+        "Solution Demonstrations – Structured demos and scoring based on real business scenarios.",
+        "Cost, TCO & ROI Analysis – Comprehensive evaluation of long-term financial impact.",
+        "Final Recommendation – Executive-ready report summarizing findings and strategic fit."
+      ]
+    },
 
-  "power-platform": {
-    title: "Microsoft Power Platform Development & Training",
-    heroImage: "/mnt/data/Services.pdf",
-    heading: "Automate, Innovate, and Visualize with Power Platform",
-    sidebarActive: "Microsoft Power Platform Development & Training",
-    sections: [
-      {
-        subheading: "Why Power Platform Matters?",
-        text:
-          "We design and implement PowerApps, Automations, and PowerBI dashboards that help businesses streamline processes and make data-driven decisions. Training ensures your teams can maximize platform potential."
-      },
-      {
-        subheading: "Our Power Platform Services Include",
-        text: [
-          "PowerApps design & implementation",
-          "PowerAutomate workflows",
-          "PowerBI dashboards & reporting"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 5: Benefits
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Key Benefits of Our ERP Evaluation Approach"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Ensures ERP alignment with real operational needs",
+        "Reduces risk of ERP implementation failure",
+        "Provides clear scoring, comparison, and justification",
+        "Accelerates decision-making for leadership",
+        "Improves long-term ROI visibility",
+        "Ensures scalability and future-readiness"
+      ]
+    },
 
-  "data-migration": {
-    title: "Data Migration Services",
-    heroImage: "/mnt/data/Single Service.pdf",
-    heading: "Accurate, Automated & Secure Data Migration",
-    sidebarActive: "Data Migration Services",
-    sections: [
-      {
-        subheading: "Why Data Migration Matters?",
-        text:
-          "Our data migration services automate ETL processes, ensuring smooth transfer of data to Dynamics 365. With strategies for accuracy, consistency, and scalability, we reduce downtime and risks in migration projects."
-      },
-      {
-        subheading: "Our Migration Services Include",
-        text: [
-          "End-to-end migration automation",
-          "Data mapping & strategies",
-          "ETL automation",
-          "Full project management"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 6: Who We Help
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Who We Help"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Our ERP Product Evaluation services are designed for organizations upgrading from legacy systems, implementing ERP for the first time, or expanding into more scalable platforms. We support SMEs, enterprises, and multi-location businesses across industries including manufacturing, distribution, retail, services, and more."
+    },
 
-  "finance-accounting": {
-    title: "Finance & Accounting Services",
-    heroImage: "/mnt/data/Services.pdf",
-    heading: "End-to-End Digital Accounting & Finance Operations",
-    sidebarActive: "Finance & Accounting Services",
-    sections: [
-      {
-        subheading: "Why Outsourcing Matters?",
-        text:
-          "We provide back-office outsourcing solutions for finance and accounting using Dynamics 365, Xero and Zoho Books. Our services ensure accurate, compliant and efficient financial management for businesses."
-      },
-      {
-        subheading: "Our Finance Services Include",
-        text: [
-          "D365 back-office outsourcing",
-          "Xero outsourcing",
-          "Zoho Books outsourcing"
-        ]
-      }
-    ]
-  },
+    // -------------------------------------------------
+    // SECTION 7: Highlight Box
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "The right ERP product becomes the backbone of your digital transformation. A wrong choice can hold your business back for years. Our structured, unbiased evaluation helps you make a decision with confidence."
+    },
 
-  "digital-marketing": {
-    title: "Digital Marketing",
-    heroImage: "/mnt/data/Single Service.pdf",
-    heading: "Grow Your Online Presence With Data-Driven Marketing",
-    sidebarActive: "Digital Marketing",
-    sections: [
-      {
-        subheading: "Why Digital Marketing Matters?",
-        text:
-          "Our digital marketing services cover SEO-compliant websites, SEO optimization and social media strategy. We help businesses boost online presence, engage customers and achieve measurable marketing outcomes."
-      },
-      {
-        subheading: "Our Digital Marketing Services Include",
-        text: [
-          "Social media strategy & marketing",
-          "SEO compliant website development",
-          "SEO services"
-        ]
-      }
-    ]
-  }
+    // -------------------------------------------------
+    // FINAL CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Ready to Begin Your ERP Evaluation?",
+      button: "Talk to an ERP Specialist",
+      link: "/contact"
+    }
+  ]
+}
+
+  // Your other services stay untouched
 };
