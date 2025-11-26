@@ -140,11 +140,9 @@
 /* GLASS BLUR HEADER → ALL OTHER PAGES */
 .glass-header {
   /* background: rgba(142, 140, 140, 0.893) !important; */
-  backdrop-filter: blur(5px) saturate(18%) !important;
-  -webkit-backdrop-filter: blur(5px) saturate(18%);
-  border-bottom: 1px solid rgba(91, 90, 90, 0.26);
+  
   /* background: transparent!important; */
-  background-color: rgba(0, 0, 0, 0.3)!important;
+  background-color: rgba(173, 169, 169, 0.3)!important;
   height: 110px;
 }
 
@@ -176,9 +174,7 @@
 
 /* OTHER PAGE HEADER → BLUR GLASS EFFECT */
 .glass-header {
-      backdrop-filter: blur(0.5px) saturate(100%) !important;
-  /* -webkit-backdrop-filter: blur(6px) saturate(160%); */
-  background-color: rgba(255, 255, 255, 0.25) !important;
+     
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 

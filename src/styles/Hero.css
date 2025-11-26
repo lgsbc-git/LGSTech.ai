@@ -13,6 +13,7 @@
   min-height: 100vh;   /* makes it at least full screen */
   height: auto;        /* allow content to expand */
   padding: 120px 0 80px;
+  background-attachment: fixed;
 }
 
 /* Dark Overlay */

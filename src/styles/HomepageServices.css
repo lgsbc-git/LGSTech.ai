@@ -121,13 +121,13 @@
 
 .services-subtitle {
   font-family: "Montserrat";
-  color: #9bff9b;
+  color: #75c100;
   font-size: 1.1rem;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .services-title {
-  font-family: "Inter";
   font-size: 2.7rem;
   font-weight: 700;
   margin-bottom: 15px;
@@ -135,7 +135,7 @@
 }
 
 .services-title span {
-  color: #26d74f;
+  color: #75c100;
 }
 
 .services-desc {
