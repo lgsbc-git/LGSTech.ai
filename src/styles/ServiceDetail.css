@@ -29,7 +29,11 @@
   gap: 50px;
   justify-content: center;
   padding: 0 100px;
+
+  /* ⭐ prevents sidebar from stretching full height */
+  align-items: flex-start;
 }
+
 
 /* -----------------------------------------------------
    MAIN CONTENT PANEL
@@ -53,18 +57,23 @@
 ----------------------------------------------------- */
 .block-hero-banner {
   padding: 30px;
-  border-radius: 18px;
+  /* border-radius: 18px; */
   color: white;
   margin-bottom: 40px;
 
+  /* background-attachment: fixed; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   position: relative;
   overflow: hidden;
 
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+  padding-top: 100px;
+  padding-right: 270px;
+  padding-left: 80px;
+  padding-bottom: 100px;
+                    
 }
 
 /* Text styling stays the same */
@@ -82,24 +91,111 @@
   line-height: 1.7;
   max-width: 760px;
   opacity: 0.95;
+
+  position: relative;      /* needed for ::before */
+  padding-left: 18px;      /* space for the line */
+}
+.block-hero-banner p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  height: 100%;
+  width: 3.5px;
+
+  /* Same color palette (your turquoise brand color) */
+  background: #04c2b4;
+
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+
+.block-hero-banner .cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-top: 5px;
+  padding: 14px 32px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Montserrat";
+
+  position: relative;
+  overflow: hidden;
+
+  /* Clean modern depth */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+}
+
+/* Sliding shine overlay */
+.block-hero-banner .cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+/* Add arrow icon (generated via CSS) */
+
+/* Hover effects */
+.block-hero-banner .cta-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.block-hero-banner .cta-button:hover::before {
+  left: 120%; /* shine slides across */
+}
+
+.block-hero-banner .cta-button:hover::after {
+  transform: translateX(6px);
+  opacity: 1; /* arrow fades in */
 }
 
 .block-hero-banner .cta-button {
   display: inline-block;
   margin-top: 5px;
   padding: 14px 30px;
-  background: #04c2b4;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   border-radius: 32px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   transition: 0.3s;
+  font-family: "Montserrat";
 }
 
 .block-hero-banner .cta-button:hover {
-  background: #039b90;
+  background: #404040;
+  color: white;
 }
+/* .block-hero-banner {
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
+  padding-top: 160px;
+  padding-right: 270px;
+  padding-left: 80px;
+  padding-bottom: 60px;
+} */
 
 /* -----------------------------------------------------
    BLOCK: SECTION TITLES

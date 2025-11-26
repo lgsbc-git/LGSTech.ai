@@ -1,6 +1,6 @@
-import erpVendorHero from "../assets/services/erp-vendor.jpg";
-import erpProductHero from "../assets/services/erp-product.webp";
-import d365ReadinessHero from "../assets/services/erp-product.webp";
+import erpVendorHero from "../assets/services/7076235.jpg";
+import erpProductHero from "../assets/services/3d-graph-computer-illustration.jpg";
+import d365ReadinessHero from "../assets/services/employee-working-marketing-setting.jpg";
 
 export const serviceData = {
   "erp-vendor-evaluation": {
