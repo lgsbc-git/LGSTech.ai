@@ -12,9 +12,9 @@ export const serviceData = {
       {
         type: "hero",
         heading:
-          "Choose the Right ERP Vendor with Confidence, Clarity & Strategic Insight",
+          "Choose the ERP Vendor Aligned to Your Strategy",
         subheading:
-          "Selecting an ERP vendor shouldn’t feel like a gamble. Our structured, data-driven evaluation framework ensures you invest in the right system with full confidence. We provide unbiased vendor analysis, executive-level comparison reports, and actionable recommendations designed to support strategic decision-making.",
+          "Avoid risky ERP decisions. Our data-driven framework offers unbiased vendor insights, executive-level reports, and actionable guidance for confident investment.",
         button: "Request a Consultation",
         link: "/contact"
       },
@@ -132,9 +132,9 @@ export const serviceData = {
     // -------------------------------------------------
     {
       type: "hero",
-      heading: "Ensure Your Next ERP Investment Drives Growth, Efficiency, and Confidence",
+      heading: "Ensure Your ERP Investment Delivers Growth and Efficiency",
       subheading:
-        "Selecting the right ERP is a strategic decision with long-term impact. Our ERP Product Evaluation Services help executives make data-driven, risk-managed decisions by assessing ERP solutions for functionality, scalability, usability, cost, integrations, and vendor reliability—ensuring your ERP aligns with business objectives.",
+        "Make confident ERP decisions with our structured evaluation, analyzing functionality, cost, scalability, integrations, and vendor reliability for strategic alignment.",
       button: "Request a Consultation",
       link: "/contact"
     },

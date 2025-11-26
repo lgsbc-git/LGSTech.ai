@@ -70,9 +70,10 @@
 /* Text styling stays the same */
 .block-hero-banner h2 {
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.2;
+  
 }
 
 .block-hero-banner p {

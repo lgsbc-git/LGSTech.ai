@@ -30,8 +30,8 @@ const ServicePageDynamic = () => {
                     className="block-hero-banner"
                     style={{
                       backgroundImage: `linear-gradient(
-          rgba(0, 0, 0, 0.6),
-          rgba(37, 38, 41, 0.7)
+          rgba(0, 0, 0, 0.9),
+          rgba(0, 0, 0, 0.86)
         ), url(${data.heroImage})`
                     }}
                   >
