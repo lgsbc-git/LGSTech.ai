@@ -1,28 +1,30 @@
-.products-container {
+/* MAIN CONTAINER */
+.products-page-container {
   padding: 120px 120px;
   background: #f7f9fc;
 }
 
-/* HERO */
-.products-hero {
+/* HERO SECTION */
+.products-page-hero {
   text-align: center;
   margin-bottom: 60px;
 }
-.products-subtitle {
-     color: #0ab3b4;
-    font-weight: 600;
-    font-size: 2rem;
-    font-family: "Montserrat";
+
+.products-page-subtitle {
+  color: #0ab3b4;
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Montserrat";
 }
 
-.products-title {
+.products-page-title {
   font-size: 3rem;
   font-weight: 700;
   color: #04356d;
   margin: 12px 0;
 }
 
-.products-description {
+.products-page-description {
   max-width: 700px;
   margin: auto;
   font-size: 1.2rem;
@@ -30,21 +32,23 @@
   font-family: "Montserrat";
 }
 
-/* GRID */
-.product-category-title {
+/* CATEGORY TITLE */
+.products-category-title {
   margin: 40px 0 20px;
   font-size: 1.8rem;
   font-weight: 700;
   color: #04356d;
 }
 
-.product-category-grid {
+/* GRID */
+.products-page-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 24px;
 }
 
-.product-card {
+/* CARD */
+.products-page-card {
   background: #fff;
   padding: 50px 25px;
   border-radius: 16px;
@@ -52,41 +56,46 @@
   transition: 0.3s ease;
 }
 
-.product-card:hover {
+.products-page-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
-.product-card-logo {
+/* ICON */
+.products-page-icon {
   width: 65px;
   height: 65px;
   object-fit: contain;
   margin-bottom: 16px;
 }
 
-.product-card-title {
+/* CARD TITLE */
+.products-page-card-title {
   font-size: 1.25rem;
   font-weight: 700;
   color: #04356d;
   margin-bottom: 10px;
 }
 
-.product-card-desc {
+/* CARD DESC */
+.products-page-card-desc {
   font-size: 0.95rem;
   color: #000000;
   margin-bottom: 18px;
   font-family: "Montserrat";
 }
 
-.product-card-btn {
+/* BUTTON */
+.products-page-btn {
   background: #00807b;
   color: white;
   border: none;
   padding: 10px 22px;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.product-card-btn:hover {
+.products-page-btn:hover {
   background: #03998e;
 }
