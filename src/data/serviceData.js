@@ -4,6 +4,8 @@ import d365ReadinessHero from "../assets/services/employee-working-marketing-set
 import d365ConsultingHero from "../assets/services/cheerful-executives-working-together.jpg";
 import d365DevelopmentHero from "../assets/services/7060468.jpg";
 import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
+import d365ProgramPMHero from "../assets/services/business-people-working-green-office.jpg";
+import powerPlatformHero from "../assets/services/business-people-working-green-office.jpg";
 
 export const serviceData = {
   "erp-vendor-evaluation": {
@@ -842,7 +844,278 @@ export const serviceData = {
     }
   ]
 },
+"d365-project-management": {
+  title: "Microsoft Dynamics 365 Program & Project Management Services",
+  sidebarActive: "Microsoft Dynamics 365 Program & Project Management Services",
 
+  heroImage: d365ProgramPMHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Deliver On-Time, On-Budget, High-Impact Dynamics 365 Outcomes",
+      subheading:
+        "Ensure every Dynamics 365 initiative is executed with discipline, clarity, and measurable business value through expert program and project leadership.",
+      button: "Request a Consultation",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // STRATEGIC DELIVERY LEADERSHIP
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Strategic Delivery Leadership for Complex Dynamics 365 Programs"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Implementing or evolving Dynamics 365 is rarely a simple project—it’s a multi-workstream transformation involving technology, processes, data, and organizational change. Without the right governance and delivery expertise, timelines slip, budgets balloon, and business outcomes stall. We provide end-to-end program and project management tailored for Dynamics 365, ensuring transparent milestones, controlled dependencies, and outcomes aligned to strategic objectives."
+    },
+
+    // -------------------------------------------------
+    // HOW WE DRIVE DELIVERY EXCELLENCE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "How We Drive Delivery Excellence"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Aligned With Your Business Goals – Every sprint, workstream, and deployment supports transformation—not just technical delivery.",
+        "Execution Without Surprises – Budgeting, resource planning, risks, and timelines are tightly managed with no ambiguity.",
+        "Transparency Through Every Stage – Dashboards, progress reports, and risk logs provide full visibility to executives.",
+        "Scaled for Enterprise Complexity – Multi-module, multi-region rollouts and integrations managed with precision."
+      ]
+    },
+
+    // -------------------------------------------------
+    // OUR SERVICES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Our Dynamics 365 Program & Project Management Services"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Program Management – Governance, strategic alignment, dependency control, and ROI tracking for multi-phase programs.",
+        "Project Management – Timeline, budget, resources, quality, and risk ownership for predictable results.",
+        "Agile DevOps Delivery Management – Sprint planning, backlog prioritization, testing cycles, and deployment readiness.",
+        "Deployment & Release Management – Cutover planning, controlled releases, hypercare, and environment coordination."
+      ]
+    },
+
+    // -------------------------------------------------
+    // BENEFITS WE DELIVER
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Benefits We Deliver"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Significantly higher success rates — companies using formal project management are ~2.5× more likely to deliver on time.",
+        "Reduced risk of cost overruns and delays — nearly 70% of unmanaged projects fail; disciplined leadership minimizes risk.",
+        "Greater efficiency and resource utilization — prevent scope creep, rework, duplication, and wasted effort.",
+        "Higher rate of benefit realization — ensure Dynamics 365 deployments deliver ROI, not just go live.",
+        "Transparency & accountability — dashboards, risk logs, and milestone reporting support better decision-making.",
+        "Scalable and future-ready delivery — supports multi-phase, multi-module enterprise rollouts."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY ENTERPRISES CHOOSE US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Enterprises Choose Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Proven Dynamics 365 delivery expertise across ERP & CRM programs.",
+        "Agile DevOps excellence for modern, iterative implementation.",
+        "Business-first governance ensuring measurable outcomes.",
+        "Predictable delivery with strict control of scope, budget & timelines.",
+        "Risk-aware execution with real-time reporting and transparency.",
+        "Hands-on leadership through go-live, hypercare, and stabilization."
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT BOX
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Deliver your Dynamics 365 program with confidence and clarity. We help you turn your ERP/CRM initiatives into disciplined, predictable, business-aligned transformations."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Deliver Your Dynamics 365 Program with Confidence",
+      button: "Schedule a Consultation",
+      link: "/contact"
+    }
+  ]
+},
+
+"power-platform": {
+  title: "Microsoft Power Platform Development & Training",
+  sidebarActive: "Microsoft Power Platform Development & Training",
+
+  heroImage: powerPlatformHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Unleash Enterprise Agility with Microsoft Power Platform",
+      subheading:
+        "Accelerate transformation, automate intelligently, and empower teams with enterprise-grade apps, workflows, and insights—built for scale, speed, and ROI.",
+      button: "Talk to our experts",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // INTRO: Turn Power Platform into a Growth Engine
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Turn Power Platform into a Strategic Growth Engine"
+    },
+    {
+      type: "paragraph",
+      text:
+        "The Power Platform is more than a low-code tool—it’s a fast lane to innovation, efficiency, and smarter decisions. For C-suite leaders, it removes bottlenecks, unifies data, and accelerates digital execution. But real ROI only happens with the right strategy, governance, and scale. We turn the Power Platform into a true competitive advantage—reducing risk, controlling cost, and speeding up enterprise-wide transformation."
+    },
+
+    // -------------------------------------------------
+    // SERVICES SECTION
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Services Engineered for Business Growth"
+    },
+    {
+      type: "bullets",
+      items: [
+        "PowerApps – Modern enterprise apps built at speed, replacing legacy tools and digitizing workflows.",
+        "Power Automate – Intelligent, scalable automation that cuts cost, reduces manual work, and improves consistency.",
+        "Power BI – Real-time, executive-ready dashboards for forecasting, performance tracking, and strategic decisions.",
+        "Training & Enablement – Equip teams with governance, skills, and templates to scale Power Platform safely."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY POWER PLATFORM MATTERS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Power Platform Should Be on Every Leader’s Radar"
+    },
+    {
+      type: "bullets",
+      items: [
+        "224% ROI with payback in under 6 months.",
+        "35% faster development cycles.",
+        "Significant reductions in IT and operational costs.",
+        "Faster go-live timelines for major solutions.",
+        "Lower dependency on expensive custom development.",
+        "Streamlined cross-department workflows.",
+        "More data-driven, consistent decision-making."
+      ]
+    },
+
+    // -------------------------------------------------
+    // ENTERPRISE-WIDE IMPACT
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "How We Create Enterprise-Wide Impact"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Business-First Strategy – Aligning Power Platform with growth, efficiency, and margin objectives.",
+        "Enterprise Architecture & Governance – Secure, compliant, scalable foundations for Power Platform adoption.",
+        "Faster ROI Through Low-Code Agility – Rapid prototyping and iterative delivery for impactful use cases.",
+        "Unified Data & Integrated Ecosystems – Seamless integration with Dynamics 365, Microsoft 365, ERP, CRM, and more.",
+        "Adoption, Training & Change Leadership – Empower teams to sustain and expand solutions independently."
+      ]
+    },
+
+    // -------------------------------------------------
+    // PROVEN BENEFITS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Proven Benefits That Drive Results"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Operational Excellence – Automate repetitive tasks and standardize workflows.",
+        "Lower IT & Development Costs – Minimize dependency on high-cost custom engineering.",
+        "Faster Strategic Decision-Making – Real-time dashboards for leadership visibility.",
+        "Scalable Digital Innovation – Enable business units to innovate quickly under proper governance.",
+        "A More Empowered Workforce – Equip teams to solve problems without IT bottlenecks."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY PARTNER WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Leading Organizations Partner With Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Expertise in enterprise-scale Power Platform deployments.",
+        "Proven delivery across Finance, Supply Chain, Field Ops, Retail & CX.",
+        "Strong governance aligned with Microsoft best practices.",
+        "C-suite visibility through ROI dashboards and adoption metrics.",
+        "Long-term partnership focused on modernization and continuous improvement."
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT BOX
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Power Platform is the engine of enterprise agility. With the right strategy, governance, and training, it becomes the fastest path to efficiency, innovation, and smarter decisions."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Ready to Build an Agile, Data-Driven Enterprise?",
+      button: "Talk to us today",
+      link: "/contact"
+    }
+  ]
+},
 
   // Your other services stay untouched
 };
