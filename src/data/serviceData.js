@@ -674,8 +674,8 @@ export const serviceData = {
   ]
 },
 "dynamics365-development": {
-  title: "Microsoft Dynamics 365 Development Services",
-  sidebarActive: "Microsoft Dynamics 365 Development Services",
+  title: "Microsoft Dynamics 365 Development & Integration Services",
+  sidebarActive: "Microsoft Dynamics 365 Development & Integration Services",
 
   heroImage: d365DevelopmentHero,
 
@@ -687,7 +687,7 @@ export const serviceData = {
       type: "hero",
       heading: "Custom Dynamics 365 Engineering for Modern Enterprises",
       subheading:
-        "Extend, optimize, and scale your platform with development solutions that deliver performance, innovation, and long-term value.",
+        "Extend, streamline, and connect your platform with development and integration services built for performance, innovation, and long-term value.",
       button: "Talk to us today",
       link: "/contact"
     },
@@ -702,11 +702,16 @@ export const serviceData = {
     {
       type: "paragraph",
       text:
-        "Out-of-the-box Dynamics 365 is strong, but growing enterprises often need deeper customization, smarter automation, seamless integrations, and more control than standard modules allow. Our development services expand your platform with tailored features, refined workflows, and connected systems that improve efficiency and user experience. By aligning Dynamics with how your business truly operates, we help you unlock capabilities that drive ROI, reduce manual work, and create a platform that scales effortlessly with your growth."
+        "Dynamics 365 is powerful out of the box, but enterprise operations often demand deeper customization, stronger automation, and tighter integration than standard modules provide. Our Dynamics 365 Development & Integration Services enhance your platform with tailored features, connected systems, and optimized workflows—so the technology evolves with your business, not the other way around."
+    },
+    {
+      type: "paragraph",
+      text:
+        "By aligning D365 with the way your organization actually runs, we help eliminate manual work, unlock new efficiencies, and ensure your platform scales confidently with growth."
     },
 
     // -------------------------------------------------
-    // DEVELOPMENT SERVICES
+    // DEVELOPMENT CAPABILITIES
     // -------------------------------------------------
     {
       type: "section-title",
@@ -715,51 +720,80 @@ export const serviceData = {
     {
       type: "bullets",
       items: [
-        "Product Extension Requirements – Define functional and technical requirements that deliver real business impact.",
-        "Product Extension Design – Scalable, future-ready extensions aligned with Microsoft best practices.",
-        "Custom Development – Build custom modules, plugins, workflows, integrations, and UI enhancements.",
-        "Azure DevOps Build Automation – Automated builds, testing, and deployments using DevOps pipelines."
+        "Product Extension Requirements – We work with your teams to define functional and technical requirements that deliver real business impact—not unnecessary customization.",
+        "Product Extension Design – Our architects design scalable, future-ready extensions aligned with Microsoft best practices and your enterprise architecture strategy.",
+        "Custom Development – We build custom modules, workflows, plugins, integrations, and UI enhancements to tailor Dynamics 365 to your unique processes and operational needs.",
+        "Azure DevOps Build Automation – Using Azure DevOps pipelines, we automate builds, testing, and deployments—ensuring reliable delivery, faster releases, and smoother operations."
       ]
     },
 
     // -------------------------------------------------
-    // VALUE DELIVERY
+    // INTEGRATION SERVICES
     // -------------------------------------------------
     {
       type: "section-title",
-      title: "Delivering Custom Development That Powers Growth and Value"
+      title: "Seamless Integration Across Your Enterprise Ecosystem"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Modern enterprises rely on a connected digital landscape. We integrate Dynamics 365 ERP and CRM with the tools across your organization to create a unified, data-driven operation. Our integration expertise spans:"
+    },
+    {
+  type: "tiles-bullets",
+  tiles: [
+    {
+      heading: "Application-to-Application Integrations",
+      bullets: [
+        "Connecting D365 with HR systems, MES, WMS, legacy ERPs, project tools, and more for uninterrupted business processes."
+      ]
+    },
+    {
+      heading: "Cloud-to-Cloud Integrations",
+      bullets: [
+        "Integrations with Microsoft 365, Azure services, Salesforce, Shopify, ServiceNow, and other cloud applications."
+      ]
+    },
+    {
+      heading: "Real-Time API & Event-Driven Integrations",
+      bullets: [
+        "REST APIs, webhooks, Dataverse events, and Azure Service Bus for instant updates, synchronized transactions, and real-time processing."
+      ]
+    },
+    {
+      heading: "Data & Analytics Integrations",
+      bullets: [
+        "Dynamics 365 synchronized with Data Lake, Fabric, Synapse, and Power BI for governed, enterprise-grade analytics."
+      ]
+    },
+    {
+      heading: "Industry & Platform Integrations",
+      bullets: [
+        "E-commerce, banking, logistics, POS, quality systems, TMS, and other industry-specific solutions."
+      ]
+    }
+  ]
+},
+
+
+    // -------------------------------------------------
+    // ENGINEERING FOR SCALE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Engineering Built for Scale, Stability & Long-Term Value"
     },
     {
       type: "bullets",
       items: [
-        "Solution Design That Scales – Built with Microsoft-aligned architecture for long-term maintainability.",
-        "Built for Your Business, Not Just Today – Future-ready development supporting enterprise growth.",
-        "Engineering Excellence Through Azure DevOps – Best-practice CI/CD pipelines for stable deployments.",
-        "A Partnership Focused on Reliability and ROI – Solutions designed to reduce manual effort and improve performance."
+        "Architecture That Supports Growth – We design extensions that are upgrade-safe, maintainable, and aligned with Microsoft’s recommended patterns.",
+        "Solutions Designed for Tomorrow – Every enhancement supports evolving business needs, new modules, and emerging technologies—avoiding rework and technical debt.",
+        "Reliable Delivery Through DevOps – Our CI/CD frameworks ensure stable, predictable deployments across dev, test, and production environments."
       ]
     },
 
     // -------------------------------------------------
-    // WHEN DO YOU NEED CUSTOM DEVELOPMENT?
-    // -------------------------------------------------
-    {
-      type: "section-title",
-      title: "When Your Business Demands More from Dynamics 365"
-    },
-    {
-      type: "bullets",
-      items: [
-        "Build advanced automation or integrations",
-        "Replace manual or complex processes with system logic",
-        "Extend modules like Finance, SCM, CX, or Field Service",
-        "Modernize workflows or create new product capabilities",
-        "Add custom UI elements, entities, or business rules",
-        "Accelerate releases with DevOps-driven pipelines"
-      ]
-    },
-
-    // -------------------------------------------------
-    // WHY CLIENTS WORK WITH US
+    // WHY LEADING ORGANIZATIONS WORK WITH US
     // -------------------------------------------------
     {
       type: "section-title",
@@ -769,17 +803,17 @@ export const serviceData = {
       type: "bullets",
       items: [
         "Certified Dynamics 365 developers and solution architects",
-        "Expertise across Finance, SCM, Sales, Service, Commerce & Project Operations",
-        "Microsoft-aligned development standards and best practices",
-        "Architecture governance that prevents over-customization",
-        "Azure DevOps CI/CD frameworks for reliable, repeatable delivery",
-        "Transparent timelines, documentation, and code quality processes",
-        "We build solutions that last — without technical debt"
+        "Deep expertise across Finance, SCM, Sales, Service, Commerce, and Project Operations",
+        "Microsoft-aligned development patterns and standards",
+        "Strong architecture governance to avoid over-customization",
+        "Azure DevOps CI/CD frameworks for reliable delivery",
+        "Transparent timelines, documentation, and code quality practices",
+        "We build solutions that last—without technical debt"
       ]
     },
 
     // -------------------------------------------------
-    // HIGHLIGHT MESSAGE
+    // HIGHLIGHT
     // -------------------------------------------------
     {
       type: "highlight",
@@ -800,6 +834,7 @@ export const serviceData = {
     }
   ]
 },
+
 "dynamics365-implementation": {
   title: "Microsoft Dynamics 365 Implementation Services",
   sidebarActive: "Microsoft Dynamics 365 Implementation Services",

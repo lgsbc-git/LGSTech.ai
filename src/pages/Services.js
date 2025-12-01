@@ -43,7 +43,7 @@ const servicesList = [
     icon: icon4,
   },
   {
-    title: "Microsoft Dynamics 365 Development Services",
+    title: "Microsoft Dynamics 365 Development & Integration Services",
     desc: "We provide custom development and extensions for Dynamics 365, ensuring solutions are tailored to unique business needs. Using Azure DevOps best practices, we streamline build automation and ensure reliable delivery.",
     link: "/services/dynamics365-development",
     icon: icon5,
