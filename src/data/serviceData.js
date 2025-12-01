@@ -6,6 +6,11 @@ import d365DevelopmentHero from "../assets/services/7060468.jpg";
 import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
 import d365ProgramPMHero from "../assets/services/modern-equipped-computer-lab.jpg";
 import powerPlatformHero from "../assets/services/power_apps.jpg";
+import dataMigrationHero from "../assets/services/power_apps.jpg";
+import financeAccountingHero from "../assets/services/modern-equipped-computer-lab.jpg";
+import dynamic365logo from "../assets/logos/dynamic365.png";
+
+
 
 export const serviceData = {
   "erp-vendor-evaluation": {
@@ -309,18 +314,58 @@ export const serviceData = {
       // HOW WE MEASURE READINESS
       // -------------------------------------------------
       {
-        type: "section-title",
-        title: "How We Measure Readiness"
-      },
-      {
-        type: "bullets",
-        items: [
-          "Application & Technology Landscape Readiness – System inventory, integrations, customizations, cloud readiness, infrastructure fit, data quality, security posture, technical debt, and scalability constraints.",
-          "People & Organizational Readiness – Digital adoption levels, skills assessment, role readiness, training needs, stakeholder alignment, and change fatigue indicators.",
-          "Change Readiness & Governance – Leadership sponsorship, decision structures, communication effectiveness, change maturity, and transformation governance strength.",
-          "Support Services & Operational Readiness – Support model capability, service management maturity, resource availability, operating model readiness, and go-live support capacity."
-        ]
-      },
+  type: "tiles-bullets",
+  title: "How We Measure Readiness",
+  tiles: [
+    {
+      heading: "1. People Readiness",
+      bullets: [
+        "Workforce capabilities, digital adoption levels, and role preparedness",
+        "Skills assessment and training uplift needs",
+        "Stakeholder alignment, engagement strength, and change fatigue indicators",
+        "Capacity and readiness of business, IT, and support teams to participate in the transformation"
+      ]
+    },
+    {
+      heading: "2. Technology Readiness",
+      bullets: [
+        "Current system inventory, integrations, and infrastructure compatibility with Dynamics 365",
+        "Cloud readiness, data quality, and security posture",
+        "Technical debt, legacy dependencies, and scalability constraints",
+        "Fit-gap analysis for core platform capabilities and technical preparedness for migration"
+      ]
+    },
+    {
+      heading: "3. Change Readiness",
+      bullets: [
+        "Leadership sponsorship, transformation vision, and governance maturity",
+        "Effectiveness of communication channels and readiness for organization-wide adoption",
+        "Change management structures, adoption risk areas, and cultural readiness",
+        "Alignment between business objectives, processes, and transformation outcomes"
+      ]
+    },
+    {
+      heading: "4. Decommission Readiness",
+      bullets: [
+        "Clarity on legacy systems targeted for retirement or consolidation",
+        "Data extraction, archival, and migration feasibility",
+        "Process mapping to ensure no operational gaps post-decommissioning",
+        "Impact assessment on downstream systems, integrations, and dependent teams"
+      ]
+    },
+    {
+      heading: "5. Customization Readiness",
+      bullets: [
+        "Review of existing custom code, workflows, extensions, and modifications",
+        "Evaluation of customization-to-standard fit for Dynamics 365",
+        "Identification of high-risk, high-effort customizations requiring redesign or reengineering",
+        "Rationalization opportunities to reduce complexity and improve maintainability"
+      ]
+    }
+  ]
+},
+
+
 
       // -------------------------------------------------
       // STRUCTURED APPROACH
@@ -453,20 +498,75 @@ export const serviceData = {
     // D365 MODULE CONSULTING SERVICES
     // -------------------------------------------------
     {
-      type: "section-title",
-      title: "Enterprise-Grade Dynamics 365 Consulting Services"
+  type: "section-title",
+  title: "Enterprise-Grade Dynamics 365 Consulting Services"
+},
+{
+  type: "tiles",
+  items: [
+    {
+      title: "Dynamics 365 Finance",
+      description:
+        "Optimize financial visibility and automate core accounting processes for smarter, faster decision-making.",
+      icon: dynamic365logo
     },
     {
-      type: "bullets",
-      items: [
-        "Dynamics 365 Finance & Supply Chain – Optimize financial operations, strengthen controls, automate workflows, and gain real-time supply chain visibility.",
-        "Dynamics 365 Commerce, Sales & Customer Service – Improve sales performance and unify customer experiences across channels.",
-        "Project Management & Accounting – Enhance cost tracking, resource visibility, and project profitability.",
-        "Field Service – Strengthen field operations with scheduling optimization, asset insights, and connected mobile experiences.",
-        "Integration & Security – Ensure secure, scalable integrations with enterprise-grade architecture.",
-        "Environment Strategy & Solution Architecture – Design ALM structures, environments, and scalable architecture aligned with growth."
-      ]
+      title: "Dynamics 365 Supply Chain Management",
+      description:
+        "Build resilient, intelligent supply chains with real-time insights and end-to-end operational control.",
+      icon: dynamic365logo
     },
+    {
+      title: "Dynamics 365 Project Operations",
+      description:
+        "Unify project planning, resourcing, budgeting, and delivery to maximize profitability and performance.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Human Resources",
+      description:
+        "Empower your workforce with modern HR tools that enhance employee experiences and streamline people operations.",
+      icon:dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Commerce",
+      description:
+        "Deliver seamless, omnichannel retail experiences that connect storefronts, digital channels, and back-office operations.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Customer Service",
+      description:
+        "Elevate customer satisfaction with intelligent case management and consistent, personalized support.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Contact Center",
+      description:
+        "Transform your contact center with AI-driven routing, unified channels, and superior customer engagement.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Field Service",
+      description:
+        "Boost service efficiency with predictive maintenance, optimized scheduling, and connected field technician support.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Sales",
+      description:
+        "Accelerate revenue growth with AI-powered insights, guided selling, and improved pipeline visibility.",
+      icon: dynamic365logo
+    },
+    {
+      title: "Dynamics 365 Customer Insights",
+      description:
+        "Unlock 360-degree customer understanding with unified data, advanced analytics, and real-time personalization.",
+      icon: dynamic365logo
+    }
+  ]
+},
+
 
     // -------------------------------------------------
     // HOW WE UNLOCK BUSINESS VALUE
@@ -1116,6 +1216,392 @@ export const serviceData = {
     }
   ]
 },
+"data-migration": {
+  title: "Precision-Engineered Data Migration for Dynamics 365",
+  sidebarActive: "Data Migration Services",
+  heroImage: dataMigrationHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Precision-Engineered Data Migration for Dynamics 365",
+      subheading:
+        "Delivering fast, disruption-free migrations backed by automation, governance, and a 100% success record.",
+      button: "Schedule a Consultation",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // INTRO SECTION
+    // -------------------------------------------------
+    {
+      type: "paragraph",
+      text:
+        "Modernizing to Dynamics 365 is a strategic leap—but only if your data makes the journey intact. Inconsistent, incomplete, or poorly migrated data remains one of the biggest risks to digital transformation. Our enterprise-grade Data Migration Services eliminate these risks through full automation, proven methodology, and a 100% success track record—delivering migrations that are 60% faster, 99.8% accurate, and completely interruption-free."
+    },
+
+    // -------------------------------------------------
+    // IMPORTANCE OF MIGRATION
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "The Strategic Importance of Getting Data Migration Right"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Data migration is one of the most underestimated—and dangerous—elements of any transformation. Research shows that 38% of migrations exceed budget or timelines due to manual processes, inconsistent data quality, and lack of governance. For organizations moving to Dynamics 365, this can lead to serious delays, costly rework, and eroded stakeholder confidence. Our approach replaces uncertainty with structure, automation, and predictability."
+    },
+
+    // -------------------------------------------------
+    // COMPLEXITY + OUR SOLUTION
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "What Makes Data Migration Complex—and How We Solve It"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Transformation phases and deployment timelines",
+        "Number of legal entities and business units",
+        "Scope and ambition of your Dynamics 365 program",
+        "Quantity, quality, and structure of legacy data",
+        "Number and diversity of legacy systems",
+        "Current migration progress and capability gaps",
+        "Historical vs. transactional data considerations"
+      ]
+    },
+    {
+      type: "paragraph",
+      text:
+        "Our assessment framework ensures migrations are faster, cleaner, and aligned with business outcomes—not just technical tasks."
+    },
+
+    // -------------------------------------------------
+    // END-TO-END MIGRATION APPROACH
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "A Unified, End-to-End Migration Approach"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Automated end-to-end migration",
+        "Source-to-target mapping & business rule alignment",
+        "Automated ETL pipelines",
+        "Full project management and governance",
+        "Extraction, transformation & load (ETL) scripting",
+        "Data verification, reconciliation, and quality uplift",
+        "End-to-end test cycles and deployment readiness"
+      ]
+    },
+
+    // -------------------------------------------------
+    // FAIL VS SUCCESS APPROACH
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Where Other Migrations Fail—and Why Ours Don’t"
+    },
+    {
+      type: "section-title",
+      title: "Industry Norm (High Risk)"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Scripts and spreadsheets",
+        "Manual intervention",
+        "Non-repeatable processes",
+        "High-risk deployment scenarios",
+        "Unpredictable timelines and outcomes"
+      ]
+    },
+
+    {
+      type: "section-title",
+      title: "Our Standard (Low Risk & Predictable)"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Automated and repeatable execution cycles",
+        "Predictable go-live outcomes",
+        "Minimal business disruption",
+        "Clean, fully validated data every time",
+        "Standardized, scalable methodology"
+      ]
+    },
+
+    // -------------------------------------------------
+    // PILLARS OF EXCELLENCE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "The Pillars of Our Operational Excellence"
+    },
+    {
+      type: "steps",
+      steps: [
+        "BIDM Methodology – A proprietary framework embedding governance, automation, and business logic into every stage.",
+        "Expert Data Migration Specialists – Full-time, certified, and deeply experienced in D365 migrations.",
+        "Purpose-Built Toolsets – Our DM REVOLVE platform automates migration end-to-end with nightly, no-touch cycles."
+      ]
+    },
+
+    // -------------------------------------------------
+    // MIGRATION READINESS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Ensuring Your Entire Data Landscape Is Migration-Ready"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Cleansing, deduplication & data integrity checks",
+        "Treatment of incomplete, missing, orphaned & obsolete data",
+        "Historical & current data strategy",
+        "Enterprise-wide data scoping & planning",
+        "Source-to-target mapping & business rule validation",
+        "ETL script development & repeatable transformation cycles",
+        "Environment setup, governance, and deployment strategy",
+        "UAT & integration testing",
+        "Cutover management & compliance controls"
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY CHOOSE US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Partner With Proven Data Migration Specialists"
+    },
+    {
+      type: "paragraph",
+      text:
+        "As certified Microsoft Data Migration Implementation Partners, we help organizations transition from outdated systems to Dynamics 365—quickly, accurately, and without disruption. If your transformation demands certainty, automation, and executive-grade assurance, we deliver exactly that."
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Transform with confidence. Migrate with precision. Deploy without disruption."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Talk to a Data Migration Specialist",
+      button: "Speak to an Expert",
+      link: "/contact"
+    }
+  ]
+},
+"finance-accounting": {
+  title: "Finance & Accounting Services",
+  sidebarActive: "Finance & Accounting Services",
+  heroImage: financeAccountingHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Finance You Can Trust. Efficiency You Can Measure.",
+      subheading:
+        "Modern, compliant, high-performance accounting operations delivered through leading cloud platforms.",
+      button: "Schedule a Discovery Call",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // WHY LEADERS CHOOSE US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why High-Performing Organizations Choose Our Finance & Accounting Services"
+    },
+    {
+      type: "paragraph",
+      text:
+        "CFOs and finance leaders demand more than transactional support—they need a partner who strengthens compliance, accelerates reporting, and enhances financial decision-making. Our Finance & Accounting Services combine deep platform expertise with standardized, scalable operating models to deliver predictable, high-quality financial outcomes."
+    },
+    {
+      type: "bullets",
+      items: [
+        "Improve financial accuracy and regulatory compliance",
+        "Reduce operational overheads and manual effort",
+        "Streamline month-end and year-end close cycles",
+        "Strengthen governance, controls, and audit readiness",
+        "Gain real-time financial visibility and insights",
+        "Scale effortlessly without expanding internal headcount"
+      ]
+    },
+
+    // -------------------------------------------------
+    // END-TO-END SERVICES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "End-to-End Finance & Accounting Outsourcing, Tailored to Your Platforms"
+    },
+    {
+      type: "paragraph",
+      text:
+        "We support the systems your teams already use—or help transition you to platforms that better match your ambition. Our services are flexible, integrated, and aligned with your long-term finance strategy."
+    },
+
+    {
+      type: "section-title",
+      title: "Our Core Offerings"
+    },
+
+    // 1. Dynamics Finance Outsourcing
+    {
+      type: "paragraph",
+      text: "1. Dynamics 365 Finance Back-Office Outsourcing"
+    },
+    {
+      type: "bullets",
+      items: [
+        "General ledger & chart of accounts",
+        "Accounts payable & receivable",
+        "Bank reconciliations",
+        "Fixed asset management",
+        "Period-close & consolidation support",
+        "Financial reporting & compliance"
+      ]
+    },
+
+    // 2. Xero Outsourcing
+    {
+      type: "paragraph",
+      text: "2. Xero Outsourcing Services"
+    },
+    {
+      type: "bullets",
+      items: [
+        "AP/AR operations",
+        "Invoice management",
+        "Payroll support",
+        "Expense tracking & reconciliation",
+        "Financial statements & management reporting"
+      ]
+    },
+
+    // 3. Zoho Books Outsourcing
+    {
+      type: "paragraph",
+      text: "3. Zoho Books Outsourcing"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Billing & receivables",
+        "Purchase & payables",
+        "Tax compliance",
+        "Banking & reconciliation",
+        "Periodic financial reporting"
+      ]
+    },
+
+    // -------------------------------------------------
+    // CORE DELIVERABLES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "What You Can Expect: Our Core Deliverables"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Full back-office outsourcing tailored to your needs",
+        "Platform-specific expertise in Dynamics 365, Xero, and Zoho Books",
+        "Accurate, timely bookkeeping & reconciliations",
+        "Compliance-first processes and audit-ready documentation",
+        "Standardized workflows supported by clear SLAs",
+        "Scalable resource models aligned with your business growth"
+      ]
+    },
+
+    // -------------------------------------------------
+    // FUTURE-READY FINANCE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Build a Future-Ready Finance Function—Without Increasing Overhead"
+    },
+    {
+      type: "paragraph",
+      text:
+        "By combining skilled finance specialists, mature processes, and leading cloud platforms, we empower your business to:"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Reduce operating costs across the finance organization",
+        "Improve data quality, accuracy, and transparency",
+        "Accelerate reporting cycles and decision support",
+        "Strengthen compliance, governance, and internal controls",
+        "Free up internal teams to focus on strategy—not transactions"
+      ]
+    },
+    {
+      type: "paragraph",
+      text:
+        "We deliver the efficiency of shared services, the intelligence of automation, and the reliability of a well-run finance team—all without the burden of expanding internal headcount."
+    },
+
+    // -------------------------------------------------
+    // WHY PARTNER WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Partner With a Trusted Finance & Accounting Outsourcing Provider"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Whether your objective is optimization, transformation, or scalability, we provide the technology, capability, and operational discipline to strengthen your entire finance ecosystem."
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT
+    // -------------------------------------------------
+    // {
+    //   type: "highlight",
+    //   bg: "#00255d",
+    //   textColor: "#ffffff",
+    //   text: ""
+    // },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Modernize your finance function with confidence, efficiency, and intelligence.",
+      button: "Talk to Our Team",
+      link: "/contact"
+    }
+  ]
+},
+
 
   // Your other services stay untouched
 };

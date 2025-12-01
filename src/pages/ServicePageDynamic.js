@@ -47,12 +47,50 @@ const ServicePageDynamic = () => {
                   </div>
                 );
 
-
               case "section-title":
                 return (
                   <h2 key={idx} className="block-section-title">
                     {block.title}
                   </h2>
+                );
+              case "tiles":
+                return (
+                  <div key={idx} className="tiles-grid">
+                    {block.items.map((item, i) => (
+                      <div className="tile-card" key={i}>
+                        {item.icon && (
+                          <img
+                            src={item.icon}
+                            alt={item.title}
+                            className="tile-icon"
+                          />
+                        )}
+                        <h3>{item.title}</h3>
+                        <p style={item.style}>{item.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                );
+              case "tiles-bullets":
+                return (
+                  <div key={idx}>
+                    {block.title && (
+                      <h2 className="block-section-title">{block.title}</h2>
+                    )}
+
+                    <div className="tiles-grid-bullet">
+                      {block.tiles.map((tile, tIdx) => (
+                        <div key={tIdx} className="tile-card-bullet">
+                          <h3 className="tile-title">{tile.heading}</h3>
+                          <ul className="tile-bullets">
+                            {tile.bullets.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 );
 
               case "paragraph":
@@ -87,7 +125,7 @@ const ServicePageDynamic = () => {
                     className="block-highlight"
                     style={{
                       background: block.bg,
-                      color: block.textColor
+                      color: block.textColor,
                     }}
                   >
                     {block.text}
