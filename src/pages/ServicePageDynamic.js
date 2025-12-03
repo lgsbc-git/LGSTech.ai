@@ -17,7 +17,7 @@ const ServicePageDynamic = () => {
       <h1 className="service-detail-title">{data.title}</h1>
 
       <div className="service-detail-content-wrapper">
-        <ServiceSidebar active={data.sidebarActive} />
+        <ServiceSidebar active={slug} />
 
         <div className="service-detail-main">
 

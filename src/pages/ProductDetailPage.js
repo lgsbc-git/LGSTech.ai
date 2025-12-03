@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import "../styles/ServiceDetail.css";
 import { productsData } from "../data/ProductsData";
-// import ProductSidebar from "../components/ProductSidebar";
+import ProductSidebar from "../components/ProductSidebar";
 
 const ProductDetailPage = () => {
   const { slug } = useParams();
@@ -17,7 +17,7 @@ const ProductDetailPage = () => {
       <h1 className="service-detail-title">{data.title}</h1>
 
       <div className="service-detail-content-wrapper">
-        
+        <ProductSidebar active={slug} />
 
         <div className="service-detail-main">
           {data.blocks.map((block, idx) => {
