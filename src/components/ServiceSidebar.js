@@ -21,7 +21,12 @@ const ServiceSidebar = ({ active }) => (
     <h3>Our Services</h3>
 
     {services.map((s) => (
-      <Link key={s.slug} to={`/services/${s.slug}`} style={{ textDecoration: "none" }}>
+      <Link
+        key={s.slug}
+        to={`/services/${s.slug}`}
+        style={{ textDecoration: "none" }}
+        onClick={() => window.scrollTo(0, 0)}  // ★ scroll fixed
+      >
         <p className={active === s.name ? "active-service" : ""}>{s.name}</p>
       </Link>
     ))}

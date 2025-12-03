@@ -4,12 +4,12 @@ import d365ReadinessHero from "../assets/services/employee-working-marketing-set
 import d365ConsultingHero from "../assets/services/cheerful-executives-working-together.jpg";
 import d365DevelopmentHero from "../assets/services/7060468.jpg";
 import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
-import d365SupportHero from "../assets/services/business-people-working-green-office.jpg";
 import d365ProgramPMHero from "../assets/services/modern-equipped-computer-lab.jpg";
 import powerPlatformHero from "../assets/services/power_apps.jpg";
-import dataMigrationHero from "../assets/services/power_apps.jpg";
-import financeAccountingHero from "../assets/services/modern-equipped-computer-lab.jpg";
-import digitalMarketingHero from "../assets/services/modern-equipped-computer-lab.jpg";
+import dataMigrationHero from "../assets/services/4b797808-fce0-4bf9-84b9-8f1e331d415f.jpg";
+import financeAccountingHero from "../assets/services/dynamic-data-visualization-3d.jpg";
+import digitalMarketingHero from "../assets/services/social-media-marketing-concept-marketing-with-applications.jpg";
+import d365SupportHero from "../assets/services/business-team-having-meeting-office.jpg";
 
 
 
@@ -1449,21 +1449,14 @@ export const serviceData = {
 
     // -------------------------------------------------
     // HIGHLIGHT BOX
-    // -------------------------------------------------
-    {
-      type: "highlight",
-      bg: "#00255d",
-      textColor: "#ffffff",
-      text:
-        "Transform with confidence. Migrate with precision. Deploy without disruption."
-    },
+    // ------------------------------------------------
 
     // -------------------------------------------------
     // CTA
     // -------------------------------------------------
     {
       type: "cta",
-      text: "Talk to a Data Migration Specialist",
+      text: "Transform with confidence. Migrate with precision. Deploy without disruption.",
       button: "Connect With Us",
       link: "/contact"
     }
