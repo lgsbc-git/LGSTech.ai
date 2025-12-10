@@ -3,9 +3,9 @@
 =============================== */
 .work-process-section {
   width: 100%;
-  background: transparent;
+  background-color: #00255d; /* UPDATED */
   padding: 100px 0;
-  /* color: #ffffff; */
+  color: #ffffff; /* UPDATED */
 }
 
 .work-process-container {
@@ -21,7 +21,7 @@
   font-weight: 800;
   text-align: center;
   margin-bottom: 100px;
- 
+  color: #ffffff; /* UPDATED */
   letter-spacing: -1px;
 }
 
@@ -35,7 +35,6 @@
   position: relative;
 }
 
-/* Individual Process Step */
 .process-step {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -44,18 +43,17 @@
   position: relative;
 }
 
-/* Alternate left and right positioning */
+/* Alternate positioning */
 .process-step.left {
   grid-template-columns: 0.5fr 1fr;
 }
 
 .process-step.right {
-  /* grid-template-columns: 1fr 0.5fr; */
-  direction: rtl; /* Reverses the grid flow */
+  direction: rtl;
 }
 
 .process-step.right > * {
-  direction: ltr; /* Reset direction for text content */
+  direction: ltr;
 }
 
 /* ===============================
@@ -63,6 +61,7 @@
 =============================== */
 .process-content {
   padding: 40px;
+  color: #ffffff; /* UPDATED */
 }
 
 .process-title {
@@ -70,15 +69,15 @@
   font-size: 2.9rem;
   font-weight: 600;
   margin: 0 0 15px 0;
-  
   letter-spacing: 1px;
+  color: #ffffff; /* UPDATED */
 }
 
 .process-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
-  /* color: rgba(255, 255, 255, 0.793); */
+  color: rgba(255, 255, 255, 0.85); /* UPDATED */
   margin: 0;
   line-height: 1.5;
 }
@@ -88,31 +87,27 @@
 =============================== */
 .process-image-wrapper {
   overflow: hidden;
- 
 }
 
 .process-image {
   width: 100%;
-  /* height: 300px; */
   object-fit: cover;
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
-
-
 
 /* ===============================
    TIMELINE CONNECTOR
 =============================== */
 .timeline-line {
   position: absolute;
-    left: 50%;
-    width: 3px;
-    height: 100px;
-    background: linear-gradient(to bottom, #004aad, transparent);
-    transform: translateX(-50%);
-    top: 100%;
-    margin-top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100px;
+  background: linear-gradient(to bottom, #66a3ff, transparent);
+  transform: translateX(-50%);
+  top: 100%;
+  margin-top: 0;
 }
 
 /* ===============================
@@ -156,10 +151,6 @@
     padding: 70px 0;
   }
 
-  .work-process-container {
-    padding: 0 30px;
-  }
-
   .work-process-heading {
     font-size: 2.2rem;
     margin-bottom: 50px;
@@ -171,12 +162,10 @@
 
   .process-content {
     padding: 25px;
-    border-radius: 12px;
   }
 
   .process-title {
     font-size: 1.5rem;
-    letter-spacing: 0.5px;
   }
 
   .process-subtitle {
@@ -204,10 +193,6 @@
 
   .process-steps {
     gap: 40px;
-  }
-
-  .process-step {
-    gap: 20px;
   }
 
   .process-content {
