@@ -2,10 +2,10 @@ import React from "react";
 import "../../styles/OurWorkProcess.css";
 
 // Import images for each process step
-import discoverImg from "../../assets/home/stepimg04.png.png";
+import discoverImg from "../../assets/home/female-team-leader-business-meeting-office-1.JPG";
 import designImg from "../../assets/home/stepimg05.png.png";
 import deliverImg from "../../assets/home/step04.png.png";
-import driveImg from "../../assets/home/stepimg04.png.png";
+import driveImg from "../../assets/home/happy-business-partners-raising-hands.jpg";
 
 function OurWorkProcess() {
   const processSteps = [

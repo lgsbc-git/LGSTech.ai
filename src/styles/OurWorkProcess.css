@@ -92,8 +92,9 @@
 .process-image {
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 20%;
   transition: transform 0.3s ease;
+  height: 200px;
 }
 
 /* ===============================
@@ -214,4 +215,17 @@
   .timeline-line {
     height: 30px;
   }
+}
+.process-image-wrapper {
+  overflow: hidden;
+  border-radius: 200px; /* fully rounded pill shape */
+  height: 230px; /* fixed height for all */
+}
+
+.process-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures uniform shape */
+  border-radius: 200px; /* match wrapper */
+  transition: transform 0.3s ease;
 }

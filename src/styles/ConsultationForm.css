@@ -1,68 +1,67 @@
 .consult-section {
   width: 100%;
-  background: transparent;
+  background: #eef2f4;
   display: flex;
   justify-content: center;
-  padding-top: 40px; /* OVERLAP with footer */
+  padding-top: 40px;
   position: relative;
   z-index: 10;
-  /* margin-bottom: -60px; */
-  background: #eef2f4;
 }
 
+/* BOX */
 .consult-box {
-    width: 56%;
-    background: #fff;
-    padding: 35px 60px;
-    border-radius: 18px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 6px 30px rgb(0 0 0 / 45%);
-    margin-bottom: -80px;
+  width: 56%;
+  background: #fff;
+  padding: 35px 60px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 6px 30px rgb(0 0 0 / 45%);
+  margin-bottom: -80px;
 }
 
 /* LEFT SIDE */
 .consult-left {
- width: 50%;
+  width: 50%;
 }
 
+/* SUB HEADING */
 .consult-sub {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #111;
 }
 
+/* MAIN TITLE */
 .consult-title {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #04356d;
   margin: 15px 0;
 }
 
+/* DESCRIPTION PARAGRAPH */
 .consult-desc {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   color: #444;
   margin-bottom: 25px;
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.consult-info-box {
-  margin-bottom: 18px;
-}
-
+/* INFO BOX TITLE */
 .consult-info-box h4 {
- font-family: "Inter";
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-
+/* INFO BOX LINKS & TEXT */
 .consult-info-box a,
 .consult-info-box p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.95rem;
   color: #0a6fa8;
 }
@@ -70,23 +69,24 @@
 /* FORM SIDE */
 .consult-form {
   width: 40%;
-    padding: 20px;
+  padding: 20px;
 }
- 
+
 .form-row {
   display: flex;
   gap: 15px;
   margin-bottom: 15px;
 }
 
+/* FORM INPUTS & TEXTAREA */
 input,
 textarea {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-family: "Montserrat";
-  margin:15px 0px;
+  margin: 15px 0px;
 }
 
 textarea {
@@ -95,22 +95,24 @@ textarea {
   margin-bottom: 20px;
 }
 
+/* BUTTON */
 .consult-btn {
   width: 110%;
-    padding: 14px;
-    background: #04c2b4;
-    color: #fff;
-    border-radius: 8px;
-    font-family: "Inter";
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-    border: 1px solid #04c2b4;
+  padding: 14px;
+  background: #04c2b4;
+  color: #fff;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 1px solid #04c2b4;
 }
 
 .consult-btn:hover {
   background: #039b90;
 }
+
 /* NOTIFICATION BAR */
 .notification-bar {
   position: fixed;
@@ -129,50 +131,34 @@ textarea {
   box-shadow: 0 4px 14px rgba(0,0,0,0.2);
 }
 
-.notification-bar.success {
-  background: #e6f9f0;
-  border-left: 4px solid #16a34a;
-}
-
-.notification-bar.error {
-  background: #ffe8e8;
-  border-left: 4px solid #dc2626;
-}
-
-.notification-content {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .notification-title {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-  font-family: "Inter";
 }
 
 .notification-message {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
 }
 
-.close-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
+/* ICON BOX */
+.consult-info-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -10px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
+.consult-icon {
+  width: 50px;
+  height: 50px;
+  padding: 14px;
+  background: #037a78;
+  border-radius: 12px;
+  object-fit: contain;
 }
 
-/* LOADER FOR BUTTON */
+/* Loader */
 .loader {
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-top: 2px solid #fff;
@@ -188,19 +174,14 @@ textarea {
     transform: rotate(360deg);
   }
 }
-/* ICON BOX FIX (Exact size like in design) */
-.consult-info-box {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin: 25px 0;
-}
 
-.consult-icon {
-  width: 50px;
-  height: 50px;
-  padding: 14px;
-  background: #037a78;      /* teal background like your screenshot */
-  border-radius: 12px;
-  object-fit: contain;
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }

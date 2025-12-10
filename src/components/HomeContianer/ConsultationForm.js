@@ -7,11 +7,10 @@ import locationIcon from "../../assets/home/Location.png";
 import { CheckCircle, XCircle, X } from "lucide-react";
 
 function ConsultationForm() {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
@@ -19,7 +18,7 @@ function ConsultationForm() {
   const [notification, setNotification] = useState({
     show: false,
     message: "",
-    isSuccess: false
+    isSuccess: false,
   });
 
   const handleChange = (e) =>
@@ -62,11 +61,17 @@ function ConsultationForm() {
         // Reset form
         setFormData({ name: "", email: "", message: "" });
       } else {
-        showNotification(data.error || "Something went wrong. Try again.", false);
+        showNotification(
+          data.error || "Something went wrong. Try again.",
+          false
+        );
       }
     } catch (error) {
       console.error(error);
-      showNotification("Oops! Something went wrong. Please try again later.", false);
+      showNotification(
+        "Oops! Something went wrong. Please try again later.",
+        false
+      );
     } finally {
       setIsLoading(false);
     }
@@ -74,7 +79,6 @@ function ConsultationForm() {
 
   return (
     <section className="consult-section">
-
       {/* NOTIFICATION BAR */}
       {notification.show && (
         <div
@@ -105,7 +109,6 @@ function ConsultationForm() {
 
       {/* MAIN BOX */}
       <div className="consult-box">
-
         {/* LEFT CONTENT */}
         <div className="consult-left">
           <p className="consult-sub">Book a Consultation</p>
@@ -115,9 +118,9 @@ function ConsultationForm() {
           </h2>
 
           <p className="consult-desc">
-            Every great transformation starts with a conversation. At LSGTech, we
-            believe that understanding your goals is the first step to crafting
-            the perfect technology solution.
+            Every great transformation starts with a conversation. At LGSTech,
+            we believe that understanding your goals is the first step to
+            crafting the perfect technology solution.
           </p>
 
           <div className="consult-info">
@@ -171,7 +174,6 @@ function ConsultationForm() {
             {isLoading ? <div className="loader"></div> : "Submit Now"}
           </button>
         </form>
-
       </div>
     </section>
   );

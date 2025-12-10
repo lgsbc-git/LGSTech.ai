@@ -7,10 +7,8 @@ import aboutTeam from "../../assets/home/About Section 2.jpg";
 function AboutLGS() {
   return (
     <section className="aboutlgs-section">
-
       <div className="about-left">
-
-        <p className="aboutlgs-subtitle">About LSGTech</p>
+        <p className="aboutlgs-subtitle">About LGSTech</p>
 
         <h2 className="aboutlgs-title">
           Empowering Businesses through <br />
@@ -19,7 +17,8 @@ function AboutLGS() {
         </h2>
 
         <p className="aboutlgs-desc">
-          At LSGTech, We Believe Technology Should Simplify Complexity and Drive Growth, Not Slow It Down. 
+          At LGSTech, We Believe Technology Should Simplify Complexity and Drive
+          Growth, Not Slow It Down.
         </p>
 
         <button className="about-btn">Read More</button>
@@ -28,7 +27,6 @@ function AboutLGS() {
       </div>
 
       <div className="about-right">
-
         <img src={aboutTeam} alt="Team" className="about-team-img" />
 
         <div className="about-stats-card">
@@ -42,9 +40,7 @@ function AboutLGS() {
             <p>Expert Team</p>
           </div>
         </div>
-
       </div>
-
     </section>
   );
 }
