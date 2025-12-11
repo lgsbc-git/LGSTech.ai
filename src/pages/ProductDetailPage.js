@@ -33,23 +33,25 @@ const iconMap = {
   FiRefreshCcw: FiIcons.FiRefreshCcw,
   FiPlayCircle: FiIcons.FiPlayCircle,
   FiTrendingUp: FiIcons.FiTrendingUp,
+  FiSearch: FiIcons.FiSearch,
+    FiLayers: FiIcons.FiLayers,
 };
 
 const ProductDetailPage = () => {
   useEffect(() => {
     const container = document.querySelector(".timeline-container");
+    if (!container) return; // <-- FIX: prevents null access
+
     const lastDot = container.querySelector(
       ".timeline-row:last-child .timeline-dot"
     );
+    if (!lastDot) return; // <-- FIX: prevents null access
 
-    if (container && lastDot) {
-      const containerTop =
-        container.getBoundingClientRect().top + window.scrollY;
-      const dotTop = lastDot.getBoundingClientRect().top + window.scrollY;
+    const containerTop = container.getBoundingClientRect().top + window.scrollY;
+    const dotTop = lastDot.getBoundingClientRect().top + window.scrollY;
 
-      const height = dotTop - containerTop;
-      container.style.setProperty("--line-height", `${height}px`);
-    }
+    const height = dotTop - containerTop;
+    container.style.setProperty("--line-height", `${height}px`);
   }, []);
 
   const { slug } = useParams();
@@ -96,6 +98,12 @@ const ProductDetailPage = () => {
                   <h2 key={idx} className="block-section-title">
                     {block.title}
                   </h2>
+                );
+              case "subheading":
+                return (
+                  <h3 key={idx} className="block-subheading">
+                    {block.text}
+                  </h3>
                 );
 
               case "paragraph":

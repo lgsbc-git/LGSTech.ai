@@ -476,7 +476,7 @@
   top: 50px;
   width: 2px;
   height: 50px;
-  background: linear-gradient(180deg, #0063cc 0%, #04c2b4 100%);
+  /* background: linear-gradient(180deg, #0063cc 0%, #04c2b4 100%); */
   opacity: 0.5;
 }
 
@@ -1417,4 +1417,15 @@
   margin: 0 auto 24px;
   max-width: 750px;
   line-height: 1.6;
+}
+.block-subheading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: #1f2933;
+
+  /* 👇 This aligns it exactly with all text */
+  display: block;
+  padding-left: 0;
+  margin-left: 80px;
 }
