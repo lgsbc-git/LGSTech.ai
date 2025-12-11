@@ -236,83 +236,203 @@ export const productsData = {
   },
 
   "AX2012-upgrade": {
-    title: "AX2012 to Dynamics 365 Upgrade Solution",
-    sidebarActive: "AX2012 to Dynamics 365 Upgrade Solution",
-    heroImage: upgradeIcon,
-    category: "Data Migration",
-    blocks: [
-      {
-        type: "hero",
-        heading: "AX2012 to Dynamics 365 Upgrade Solution",
-        subheading:
-          "Smooth upgrade path from AX2012 to Dynamics 365 with quality and minimal downtime.",
-        button: "Learn More",
-        link: "/contact",
-      },
-      {
-        type: "section-title",
-        title: "Overview",
-      },
-      {
-        type: "paragraph",
-        text: "Upgrade from AX2012 to Dynamics 365 effortlessly with our solution that prioritizes quality, minimizes downtime, and ensures a smooth transition to modern ERP capabilities.",
-      },
-      {
-        type: "section-title",
-        title: "Key Features",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Seamless data and configuration migration",
-          "Custom code modernization",
-          "Performance optimization",
-          "User training and change management",
-          "Post-upgrade support",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "Benefits",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Minimized business disruption",
-          "Access to latest features and security",
-          "Improved efficiency and scalability",
-          "Future-proof your ERP system",
-          "Expert-guided implementation",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "How It Works",
-      },
-      {
-        type: "steps",
-        steps: [
-          "Upgrade assessment and planning",
-          "Environment setup and testing",
-          "Data migration and validation",
-          "Go-live and monitoring",
-          "Ongoing optimization",
-        ],
-      },
-      {
-        type: "highlight",
-        bg: "#00255d",
-        textColor: "#ffffff",
-        text: "Transform your legacy AX2012 system into a powerful Dynamics 365 platform.",
-      },
-      {
-        type: "cta",
-        text: "Upgrade to Dynamics 365 Today",
-        button: "Contact Us",
-        link: "/contact",
-      },
-    ],
-  },
+  title: "AX2012 to Dynamics 365 Upgrade Solution",
+  sidebarActive: "AX2012 to Dynamics 365 Upgrade Solution",
+  heroImage: upgradeIcon,
+  category: "Data Migration",
+
+  blocks: [
+    // HERO
+    {
+      type: "hero",
+      heading: "Modernize AX2012 with a Confident Move to Dynamics 365",
+      subheading: "Unlock performance, security, and scalability in one move.",
+      button: "Start Your Upgrade Journey",
+      link: "/contact"
+    },
+
+    // SECTION 1
+    {
+      type: "section-title",
+      title: "Why Move from AX2012 to Dynamics 365"
+    },
+    {
+      type: "paragraph",
+      text: "Upgrading from AX2012 is more than a version change—it’s a strategic step that strengthens security, boosts performance, and unlocks modern cloud capabilities to help your business grow."
+    },
+
+    {
+  type: "tiles",
+  tiles: [
+    {
+      icon: "FiShield",
+      title: "Stronger Security & Continuous Updates",
+      description:
+        "AX2012 is unsupported, increasing security and operational risks. Dynamics 365 delivers ongoing updates, enterprise-grade security, and compliance support. Eliminates dependency on manual patches and outdated infrastructure."
+    },
+    {
+      icon: "FiCloud",
+      title: "Cloud Scalability & Anywhere Access",
+      description:
+        "Scale infrastructure on demand—no hardware required. Access applications from any device, browser, or location. Remove the burden of managing backups, servers, and disaster recovery."
+    },
+    {
+      icon: "FiBarChart2",
+      title: "Modern Experience & Better Business Insights",
+      description:
+        "Faster, cleaner interface designed for efficiency and productivity. Built-in analytics, improved financial and compliance capabilities, and reduced reliance on heavy customizations. Supports better decision-making and collaboration across departments."
+    },
+    {
+      icon: "FiDollarSign",
+      title: "Lower Total Cost of Ownership",
+      description:
+        "Replaces costly hardware and maintenance with predictable subscription pricing. Reduces IT overhead and long-term infrastructure investments."
+    },
+    {
+      icon: "FiTrendingUp",
+      title: "Future-Proof ERP Foundation",
+      description:
+        "Continuous enhancements, AI-driven insights, and automation tools allow Dynamics 365 to evolve with your organization. Deep integration with the Microsoft ecosystem enables innovation and long-term scalability."
+    }
+  ]
+},
+
+
+    // SECTION 2
+    {
+      type: "section-title",
+      title: "Our Proven Upgrade Process"
+    },
+    {
+      type: "paragraph",
+      text: "Leveraging years of hands-on experience, we guide your organization through a structured, predictable, and low-risk upgrade journey. Every step is designed to minimize disruption, ensure accuracy, and maximize the value of your new Dynamics 365 environment."
+    },
+
+    // Steps in Order
+    {
+  type: "timelineAlternate",
+  stages: [
+    {
+      number: 1,
+      icon: "FiClipboard",
+      title: "Assessment & Planning",
+      description:
+        "Review AX2012 environment: customizations, integrations, data, and third-party add-ons. Define what will be migrated, modernized, or retired. Develop a detailed project plan covering timelines, risks, and cutover strategy."
+    },
+    {
+      number: 2,
+      icon: "FiSettings",
+      title: "Environment Preparation",
+      description:
+        "Provision Dynamics 365 sandboxes. Clean, organize, and validate source data. Refactor legacy customizations for cloud compatibility."
+    },
+    {
+      number: 3,
+      icon: "FiRefreshCcw",
+      title: "Migration & Upgrade",
+      description:
+        "Convert existing code and migrate master/transactional data. Validate accuracy through structured data checks. Conduct functional, integration, and user-acceptance testing."
+    },
+    {
+      number: 4,
+      icon: "FiPlayCircle",
+      title: "Cutover & Go-Live",
+      description:
+        "Execute a mock cutover to fine-tune timing and reduce risks. Migrate final data, switch users, and validate business processes."
+    },
+    {
+      number: 5,
+      icon: "FiTrendingUp",
+      title: "Post-Upgrade Support",
+      description:
+        "Provide hypercare, performance monitoring, and user training. Continuous optimization ensures smooth operations and future scalability."
+    }
+  ]
+}
+,
+
+    // SECTION 3 — Partner of Choice
+    {
+      type: "section-title",
+      title: "What Makes Us the Upgrade Partner of Choice"
+    },
+    {
+      type: "paragraph",
+      text: "Upgrading from AX2012 demands technical mastery, strategic foresight, and a partner who understands your business inside out. With years of proven experience, we deliver reliable, efficient, and enterprise-grade Dynamics 365 outcomes—ensuring your upgrade is smooth, predictable, and positioned for long-term success."
+    },
+
+    {
+  type: "tiles-bullet",
+  tiles: [
+    {
+      title: "Seamless Data & Configuration Migration",
+      bullets: [
+        "Every data entity, configuration, and business rule is migrated accurately and efficiently.",
+        "Structured validation cycles minimize errors, reduce rework, and ensure readiness from day one."
+      ]
+    },
+    {
+      title: "Expert Custom Code Modernization",
+      bullets: [
+        "Analyze, refactor, and modernize AX2012 customizations using Dynamics 365 best practices.",
+        "Reduce technical debt, improve system performance, and ensure long-term maintainability."
+      ]
+    },
+    {
+      title: "Performance-Driven Upgrade",
+      bullets: [
+        "Optimize environments, integrations, and workloads for faster, smoother operations.",
+        "Minimize downtime and maximize business continuity throughout the transition."
+      ]
+    },
+    {
+      title: "Change Management & User Enablement",
+      bullets: [
+        "Role-based training and hands-on guidance boost adoption and team confidence.",
+        "Ensure employees fully leverage Dynamics 365 capabilities from day one."
+      ]
+    },
+    {
+      title: "Post-Upgrade Hypercare & Continuous Optimization",
+      bullets: [
+        "Continuous monitoring, issue resolution, and ongoing system improvements.",
+        "Keep Dynamics 365 evolving with your business, delivering long-term value beyond go-live."
+      ]
+    }
+  ]
+}
+,
+
+    // SECTION 4 — Benefits
+    {
+      type: "section-title",
+      title: "Business Benefits We Promise"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Minimized Business Disruption through controlled multi-cycle upgrade methodology.",
+        "Enhanced Security & Compliance with ongoing updates and enterprise security.",
+        "Operational Efficiency & Scalable Performance with streamlined cloud processes.",
+        "Future-Proof ERP Foundation powered by AI, automation, and Microsoft ecosystem integration.",
+        "Predictable, Expert-Guided Upgrade with low-risk, iterative execution.",
+        "Enterprise-Grade Risk Management & Leadership Visibility with dashboards and milestone reporting."
+      ]
+    },
+
+    // CTA
+    {
+  type: "cta",
+  text: "Transform AX2012 Into a Modern Dynamics 365 Platform",
+  description:
+    "Your upgrade shouldn’t be a leap of faith—it's a controlled, confident step forward. Partner with experts who deliver accuracy, performance, and long-term success.",
+  button: "Upgrade to Dynamics 365 Today",
+  link: "/contact"
+}
+
+  ]
+},
+
   "Legacy-application": {
     title: "Legacy Application to Fabric Data Archive Solution",
     sidebarActive: "Legacy Application to Fabric Data Archive Solution",

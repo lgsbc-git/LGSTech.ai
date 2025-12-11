@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import { useParams } from "react-router-dom";
 import * as FiIcons from "react-icons/fi";
 import * as MdIcons from "react-icons/md";
@@ -7,7 +8,6 @@ import "../styles/ProductDetail.css";
 import { productsData } from "../data/ProductsData";
 import ProductSidebar from "../components/ProductSidebar";
 import * as FaIcons from "react-icons/fa";
-
 
 // Icon mapping
 const iconMap = {
@@ -20,9 +20,38 @@ const iconMap = {
   FiCompass: FiIcons.FiCompass,
   FiUsers: FiIcons.FiUsers,
   FiRocket: FaIcons.FaRocket,
+
+  // NEW ICONS
+  FiShield: FiIcons.FiShield,
+  FiCloud: FiIcons.FiCloud,
+  FiBarChart2: FiIcons.FiBarChart2,
+  FiDollarSign: FiIcons.FiDollarSign,
+  FiTrendingUp: FiIcons.FiTrendingUp,
+
+  FiClipboard: FiIcons.FiClipboard,
+  FiSettings: FiIcons.FiSettings,
+  FiRefreshCcw: FiIcons.FiRefreshCcw,
+  FiPlayCircle: FiIcons.FiPlayCircle,
+  FiTrendingUp: FiIcons.FiTrendingUp,
 };
 
 const ProductDetailPage = () => {
+  useEffect(() => {
+    const container = document.querySelector(".timeline-container");
+    const lastDot = container.querySelector(
+      ".timeline-row:last-child .timeline-dot"
+    );
+
+    if (container && lastDot) {
+      const containerTop =
+        container.getBoundingClientRect().top + window.scrollY;
+      const dotTop = lastDot.getBoundingClientRect().top + window.scrollY;
+
+      const height = dotTop - containerTop;
+      container.style.setProperty("--line-height", `${height}px`);
+    }
+  }, []);
+
   const { slug } = useParams();
   const data = productsData[slug];
 
@@ -83,6 +112,24 @@ const ProductDetailPage = () => {
                       <li key={i}>{item}</li>
                     ))}
                   </ul>
+                );
+              case "tiles-bullet":
+                return (
+                  <div key={idx} className="tiles-bullet-container">
+                    <div className="tiles-bullet-grid">
+                      {block.tiles.map((tile, i) => (
+                        <div key={i} className="tiles-bullet-card">
+                          <h3 className="tiles-bullet-title">{tile.title}</h3>
+
+                          <ul className="tiles-bullet-list">
+                            {tile.bullets.map((point, j) => (
+                              <li key={j}>{point}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 );
 
               case "steps":
@@ -153,6 +200,84 @@ const ProductDetailPage = () => {
                     </div>
                   </div>
                 );
+              case "stages":
+                return (
+                  <div key={idx} className="block-stages">
+                    <div className="stages-container">
+                      {block.stages.map((stage, i) => {
+                        const IconComponent = iconMap[stage.icon];
+                        return (
+                          <div key={i} className="stage-card">
+                            <div className="stage-left">
+                              <div className="stage-number">{stage.number}</div>
+                              <div className="stage-connector"></div>
+                            </div>
+
+                            <div className="stage-content">
+                              <div className="stage-icon">
+                                {IconComponent && <IconComponent />}
+                              </div>
+                              <h3 className="stage-title">{stage.title}</h3>
+                              <p className="stage-description">
+                                {stage.description}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              case "timelineAlternate":
+                return (
+                  <div key={idx} className="timeline-container">
+                    <div className="timeline-vline" />
+
+                    {block.stages.map((stage, i) => {
+                      const IconComponent = iconMap[stage.icon];
+                      const isLeft = i % 2 === 0; // left, right, left, right
+                      return (
+                        <div
+                          key={i}
+                          className={`timeline-row ${
+                            isLeft ? "left" : "right"
+                          }`}
+                        >
+                          <div className="timeline-row-inner">
+                            <div
+                              className={`timeline-card-wrapper ${
+                                isLeft ? "to-left" : "to-right"
+                              }`}
+                            >
+                              <div className="timeline-card">
+                                <div className="timeline-badge">
+                                  {stage.number}
+                                </div>
+
+                                {IconComponent && (
+                                  <IconComponent className="timeline-icon" />
+                                )}
+
+                                <h3 className="timeline-title">
+                                  {stage.title}
+                                </h3>
+                                <p className="timeline-description">
+                                  {stage.description}
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="timeline-connector-wrapper">
+                              <div className="timeline-dot" />
+                              {/* vertical connector spans between dots — purely decorative; CSS handles length */}
+                              <div className="timeline-vertical" />
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
 
               case "features":
                 return (
@@ -183,6 +308,11 @@ const ProductDetailPage = () => {
                 return (
                   <div key={idx} className="block-cta">
                     <h3>{block.text}</h3>
+
+                    {block.description && (
+                      <p className="cta-description">{block.description}</p>
+                    )}
+
                     <a href={block.link} className="cta-button">
                       {block.button}
                     </a>

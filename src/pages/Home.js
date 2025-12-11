@@ -5,7 +5,7 @@ import HomepageServices from "../components/HomeContianer/HomepageServices";
 import WhyChoose from "../components/HomeContianer/WhyChoose";
 import OurValues from "../components/HomeContianer/OurValues";
 import OurWorkProcess from "../components/HomeContianer/OurWorkProcess";
-import Testimonials from "../components/HomeContianer/Testimonials";
+// import Testimonials from "../components/HomeContianer/Testimonials";
 import OurPartner from "../components/HomeContianer/OurPartner";
 import ConsultationForm from "../components/HomeContianer/ConsultationForm";
 import Sidebar from "../components/Sidebar";
@@ -21,7 +21,7 @@ export default function Home() {
       <WhyChoose />
       <OurValues />
       <OurWorkProcess />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <OurPartner />
       <ConsultationForm />
     </>
