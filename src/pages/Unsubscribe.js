@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import '../styles/Unsubscribe.css'
-import { FaCheckCircle, FaExclamationTriangle } from "react-icons/fa";
-import unsubscribedIcon from "../assets/icons8-unsubscribed.gif"
+import '../styles/Unsubscribe.css';
+import { MdError } from "react-icons/md";
+import unsubscribedIcon from "../assets/icons8-unsubscribed.gif";
 
 const Unsubscribe = () => {
-  const [status, setStatus] = useState("loading"); // "loading", "success", "error"
+  const [status, setStatus] = useState("loading");
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -17,8 +17,10 @@ const Unsubscribe = () => {
       return;
     }
 
-    // Call backend API
-    fetch(`http://16.16.201.189/api/unsubscribe`, {
+    // Fetch URL from environment variable
+    const backendURL = process.env.REACT_APP_BACKEND_URL;
+
+    fetch(`${backendURL}/unsubscribe`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),
@@ -47,10 +49,14 @@ const Unsubscribe = () => {
         <div className="success-box">
           <h2>
             <img
-              
               src={unsubscribedIcon}
               alt="success icon"
-              style={{ width: "28px", height: "28px", marginRight: "8px", verticalAlign: "middle" }}
+              style={{
+                width: "28px",
+                height: "28px",
+                marginRight: "8px",
+                verticalAlign: "middle",
+              }}
             />
             Unsubscribed
           </h2>
@@ -60,7 +66,14 @@ const Unsubscribe = () => {
 
       {status === "error" && (
         <div className="error-box">
-          <h2>⚠️ Error</h2>
+          <h2>
+            <MdError
+              size={25}
+              color="#45444481"
+              style={{ marginRight: "8px", marginBottom: "3px", verticalAlign: "middle" }}
+            />
+            Error
+          </h2>
           <p>{message}</p>
         </div>
       )}
